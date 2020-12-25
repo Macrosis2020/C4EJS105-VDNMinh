@@ -9,7 +9,7 @@ console.log(' ');
 console.log('a)');
 {
     let i = 0;
-    while (i < n) {
+    while (i < n - 1) {
         if (arrayOfNumbers[i] > arrayOfNumbers[i + 1]) {
             let t = arrayOfNumbers[i];
             arrayOfNumbers.splice(i, 1);
@@ -39,12 +39,23 @@ console.log(oddArray);
 console.log(' ');
 console.log('c)');
 {
-    for(i=0;i<n;i++) {
-        if (oddArray[i]==oddArray[i+1]) {
+    i = 0;
+    while (i < oddArray.length) {
+        if (oddArray[i] == oddArray[i + 1]) {
             oddArray.splice(i, 1);
+            i = 0;
+        } else {
+            i++;
         }
-        if (evenArray[i]==evenArray[i+1]) {
+    }
+} {
+    i = 0;
+    while (i < evenArray.length) {
+        if (evenArray[i] == evenArray[i + 1]) {
             evenArray.splice(i, 1);
+            i = 0;
+        } else {
+            i++;
         }
     }
 }
