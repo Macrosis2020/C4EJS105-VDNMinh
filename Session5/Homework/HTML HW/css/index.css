@@ -1,0 +1,204 @@
+/* ============================ table of content ==============================
+1,Reset css
+2,Header
+3,Post
+4,Footer
+*/
+/*  ============================= 1,Reset css ==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #585c68;
+    line-height: 22px;
+    font-size: 14px;
+    color: #a3dfa8;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container-fluid{
+    max-width: 100%;
+    padding: 0 15px;
+}
+.container{
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.bold{
+    font-weight: 700;
+    font-size:  20px;
+    text-transform: uppercase;
+}
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+/* =============================== 2,Header ==============================*/
+/* =============================== 2,Post ==============================*/
+/* left */
+.post{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+.post_left{
+    background: #007700;
+    width: 280px;
+}
+.post .post_left .post_profile {
+    width: 100%;
+    height: 280px;
+}
+.post .post_left .post_content{
+    padding: 0 15px;
+}
+.post_left .title{
+    margin-bottom: 10px;
+}
+.post .bold{
+    color: white;
+}
+.post .post_regular{
+    color:#c7ffc5;
+}
+.post .post_item {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1ffc8;
+}
+.post .post_left .post_item:last-child,
+.post .post_right .post_item:last-child {
+    border-bottom: 0px;
+}
+.post .post_left ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.post .post_left ul li:last-child{
+    margin-bottom: 0;
+}
+.post .post_left ul li .icon{
+    width: 35px;
+    height: 35px;
+    background: rgb(0, 0, 0);
+    color: #62ec69;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+.post .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.post .post_left ul li .data{
+    color: #b1ffb7;
+}
+.post .post_left .post_skill ul li {
+    color: #c1ffb1;
+    justify-content: space-between;
+}
+.post .post_left .post_skill ul li .skill_name{
+    width: 20%;
+}
+.post .post_left .post_skill ul li .skill_progress{
+    width: 50%;
+    margin: 0 5px;
+    height: 5px;
+    background: #00d953;
+    position: relative;
+}
+.post .post_left .post_skill ul li .skill_percent{
+    width: 10%;
+}
+.post .post_left .post_skill ul li .skill_progress span{
+    position: absolute;
+    height: 100%;
+    background: rgb(0, 0, 0);
+}
+/* right */
+.post .post_right{
+    width: 520px;
+    background: rgb(0, 0, 0);
+    padding: 25px;
+}
+.post .post_right .bold{
+    color: #ffffff;
+}
+.post .post_right .post_work ul,
+.post .post_right .post_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.post .post_right ul li{
+    position: relative;
+}
+.post .post_right ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.post .post_right ul li .info{
+    margin-bottom: 20px;
+}
+.post .post_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+.post_right .title{
+    margin-bottom: 10px;
+}
+.post .post_right .post_work ul li ::before,
+.post .post_right .post_education ul li ::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bf42a;
+}
+.post .post_right .post_work ul li ::after,
+.post .post_right .post_education ul li ::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 3px;
+    height: 115px;
+    background: #0bf42a;
+}
+.post .post_right .post_hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+.post .post_right .post_hobby ul li {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #0bf40b;
+    border-radius: 50%;
+    top: 20px;
+    position: relative;
+    color: #8aff94;   
+}
+.post .post_right .post_hobby ul li i {
+    font-size: 30px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

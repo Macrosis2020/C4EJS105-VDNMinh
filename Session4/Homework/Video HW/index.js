@@ -146,28 +146,28 @@ let game = {
 // console.log(`Ratings: ${game.ratings}`);
 // console.log(`Developers: ${game.developers}`)
 // Object and Array mix structure
-// //1
-// game.developers = ['Ari Gibson', ' William Pellen', ' Jake Vine'];
-// let game2 = {
-//     title: 'Stardew Valley',
-//     release: 2016,
-//     ratings: 9.4,
-//     developers: ['Eric Barone'],
-// }
-// let game3 = {
-//     title: 'Darkest Dungeon',
-//     release: 2015,
-//     ratings: 9.1,
-//     developers: ['Chris Bourassa', ' Tyler Sigman', ' Dana Fortier'],
-// }
-// let gameArr = [game, game2, game3];
-// //2
-// {
-//     for (i = 0; i < gameArr.length; i++) {
-//         console.log('----------------------------');
-//         console.log(gameArr[i].title);
-//         console.log(`Year of Release: ${gameArr[i].release}`);
-//         console.log(`Ratings: ${gameArr[i].ratings}`);
-//         console.log(`Developers: ${game.developers}`);
-//     }
-// }
+//1
+game.developers = ['Ari Gibson', ' William Pellen', ' Jake Vine'];
+let game2 = {
+    title: 'Stardew Valley',
+    release: 2016,
+    ratings: 9.4,
+    developers: ['Eric Barone'],
+}
+let game3 = {
+    title: 'Darkest Dungeon',
+    release: 2015,
+    ratings: 9.1,
+    developers: ['Chris Bourassa', ' Tyler Sigman', ' Dana Fortier'],
+}
+let gameArr = [game, game2, game3];
+//2
+{
+    for (i = 0; i < gameArr.length; i++) {
+        console.log('----------------------------');
+        console.log(gameArr[i].title);
+        console.log(`Year of Release: ${gameArr[i].release}`);
+        console.log(`Ratings: ${gameArr[i].ratings}`);
+        console.log(`Developers: ${game.developers}`);
+    }
+}
