@@ -1,0 +1,6 @@
+div.item > span {
+    font-size: 18px;
+}
+div div span {
+    font-style: italic;
+}

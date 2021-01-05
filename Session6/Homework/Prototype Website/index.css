@@ -1,0 +1,100 @@
+body {
+    /* background-color: black; */
+    background-image: url('/Prototype\ Website/Images/Netzach.png');
+    background-attachment: fixed;
+}
+#header-text {
+    font-family: 'Agency FB', 'Tahoma';
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#header-text > h1 {
+    font-size: 100px;
+    background-color: black;
+    border: 10px white dashed;
+}
+#header-text > h2 {
+    font-size: 75px;
+    background-color: rgba(0, 179, 0, 0.144);
+    border: 10px white dashed;
+}
+#main-box {
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: white solid 10px;
+    padding-bottom: 80px;
+    /* padding: 15px; */
+}
+.tier-indicator {
+    font-family: 'Agency FB', 'Tahoma';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 75px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-top: 5px white dashed;
+    border-bottom: 5px white dashed;
+}
+.page-art {
+    width: 40%;
+    border: solid white 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card-text {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 10px;
+}
+.card-details {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    border: white solid 5px;
+    background-color: black;
+}
+.card-name {
+    display: block;
+    font-family: 'Agency FB', 'Arial';
+    color: white;
+    font-size: 100px;
+}
+.card-origin {
+    display: block;
+    font-family: 'SVN-Aptima', 'Arial';
+    color: white;
+    font-size: 40px;
+}
+.awakening {
+    display: block;
+    font-family: 'SVN-Aptima', 'Arial';
+    color: rgb(0, 182, 85);
+    font-size: 40px;
+}
+.breakdown {
+    display: block;
+    font-family: 'SVN-Aptima', 'Arial';
+    color: rgb(223, 80, 80);
+    font-size: 40px;
+}
+.card-effects {
+    display: block;
+    font-family: 'SVN-Aptima', 'Arial';
+    color: white;
+    font-size: 30px;
+}
+.flavor-text {
+    display: inline;
+    font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}

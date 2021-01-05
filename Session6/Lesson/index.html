@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+
+        .title {
+            background-color: chocolate;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 150px;
+            font-family: "OCR A Std";
+            color: rgb(255, 255, 255);
+        }
+
+        #display-section {
+            display: block;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .EGO-name {
+            display: block;
+            font-family: "Castellar";
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .EGO-pic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 10px color black;
+            width: 720;
+            height: 544;
+        }
+
+        .EGO-display {
+            display: block;
+            width: 40%;
+            height: 40%;
+            padding: 30px;
+            margin: auto;
+        }
+
+        #sub-title {
+            text-align: center;
+            font-size: 75px;
+            color: white;
+            background-color: rgb(141, 71, 21);
+            font-family: "OCR A Std";
+        }
+
+        #column1 {
+            display: inline-block;
+            width: 50%;
+            padding: 10px;
+        }
+        #column2 {
+            width: 50%;
+            float: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="index.css">
+    <p id="post-title" class="title">
+        EGO List
+    </p>
+    <p id=sub-title>
+        Floor of Literature
+    </p>
+    <div id="display-section">
+        <div id="column1">
+            <div class="EGO-display">
+                <img class="EGO-pic" src="/Images/BlackSwan_EGO.png" alt="img not found">
+                <p class="EGO-name">Dream of a Black Swan</p>
+            </div>
+            <div class="EGO-display">
+                <img class="EGO-pic" src="/Images/Rati_EGO.png" alt="img not found">
+                <p class="EGO-name">Laetitia</p>
+            </div>
+        </div>
+        <div id="column2">
+            <div class="EGO-display">
+                <img class="EGO-pic" src="/Images/RedShoes_EGO.png" alt="img not found">
+                <p class="EGO-name">Sanguine Desire</p>
+            </div>
+            <div class="EGO-display">
+                <img class="EGO-pic" src="/Images/SpiderBud_EGO.png" alt="img not found">
+                <p class="EGO-name">Red Eyes</p>
+            </div>
+        </div>
+    </div>
+
+</html>
