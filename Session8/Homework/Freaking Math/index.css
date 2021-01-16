@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    color: rgb(0, 255, 0); 
+    font-family: 'Digital-7'
+}
+.checkmark {
+    border:rgb(0, 255, 0) solid 1px;
+    margin-top: 2px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    padding: 1px;
+    font-size: 10px;
+    display: inline-block;
+}
+#settings-box {
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    border:rgb(0, 255, 0) solid 3px;
+    user-select: none;
+}
+#timer-check:hover {
+    background-color: rgb(0, 207, 0);
+}
+#score-check:hover {
+    background-color: rgb(0, 207, 0);
+}
+#game-box {
+    display: block;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    border:rgb(0, 255, 0) solid 2px;
+    user-select: none;
+}
+#timer-disp {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+}
+#score-disp {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    clear:both;
+}
+#timer {
+    font-size: 30px;
+}
+#score {
+    font-size: 30px;
+}
+#prompt-box {
+    display: block;
+    height: 50px;
+    border: chartreuse solid 1px;
+    text-align: center;
+    font-size: 50px;
+}
+#true-box {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border: rgb(0, 255, 0) solid 2px;
+}
+#true-box:hover {
+    background-color: rgb(0, 207, 0);
+}
+#false-box {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border: rgb(0, 255, 0) solid 2px;
+}
+#false-box:hover {
+    background-color: rgb(0, 207, 0);
+}
+#start-box {
+    display: block;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border: rgb(0, 255, 0) solid 2px;
+}
+#start-box:hover {
+    background-color: rgb(0, 207, 0);
+}
+#console-box {
+    display: block;
+    width: 40%;
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border: rgb(0, 255, 0) solid 2px;
+}

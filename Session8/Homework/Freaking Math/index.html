@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="settings-box">
+        <span style="display: block; font-size: 30px; margin-top: 0; border: 1px solid rgb(0, 255, 0); padding: 3px; text-align: center; margin-right: auto;">Settings</span>
+        <br>
+        <br>
+        <div id="timer-settings">
+            <span class="checkmark" id="timer-check" onclick="timerOnOff()">x</span>
+            <span style="font-size: 15px;">‎‎‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Timer</span>
+        </div>
+        <br>
+        <div id="score-settings">
+            <span class="checkmark" id="score-check" onclick="scoreOnOff()">x</span>
+            <span style="font-size: 15px;">‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Score</span>
+        </div>
+    </div>
+    <br>
+    <div style="font-size: 20px; text-align: center;">HIGH SCORE</div>
+    <div style="font-size: 50px; text-align: center;" id = "high-score-box">0</div>
+    <br>
+    <div id="game-box">
+        <div id="timer-disp">
+            <span>Time Remaining</span>
+            <br>
+            <span id="timer">0</span>
+        </div>
+        <div id="score-disp">
+            <span>Score</span>
+            <br>
+            <span id="score">0</span>
+        </div>
+        <br>
+        <br>
+        <div id="prompt-box"></div>
+        <br>
+        <div id="true-box" onclick="inputTrue()">TRUE</div>
+        <div id="false-box" onclick="inputFalse()">FALSE</div>
+    </div>
+    <br>
+    <div>
+        <div id="start-box" onclick="startGame()">START</div>
+    </div>
+    <br>
+    <div id="console-box">WELCOME TO FREAKING MATH</div>
+    <script src="index.js"></script>
+</body>
+
+</html>

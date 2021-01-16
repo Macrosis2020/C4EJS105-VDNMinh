@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <table id="prj-table">
+        <input type="text" placeholder="Enter Project" id="add-project">
+        <input type="text" placeholder="Enter Task" id="add-task">
+        <input type="number" placeholder="Enter Time Spent" id="add-time">
+        <button onclick="addUpdateRow()" id="add-update-btn">Add</button>
+        <button onclick="clearInput()">Clear</button>
+        <thead>
+            <th><strong>Project</strong></th>
+            <th><strong>Task</strong></th>
+            <th><strong>Time Spent</strong></th>
+            <th><strong>Action</strong></th>
+        </thead>
+        <tbody id="prj-table-b">
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>

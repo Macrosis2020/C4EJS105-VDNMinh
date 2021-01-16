@@ -1,0 +1,26 @@
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+#minus-symbol {
+    display: inline-block;
+    background-color: rgb(192, 192, 192);
+    width: 20px;
+    text-align: center;
+}
+#minus-symbol:hover {
+    background-color: rgb(160, 160, 160);
+}
+#plus-symbol {
+    display: inline-block;
+    background-color: rgb(192, 192, 192);
+    width: 20px;
+    text-align: center;
+}
+#plus-symbol:hover {
+    background-color: rgb(160, 160, 160);
+}
+#count {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
