@@ -11,8 +11,8 @@ function getRandomInt(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 function displayPrompt() {
-    firstNo = getRandomInt(1, 10);
-    secondNo = getRandomInt(1, 10);
+    firstNo = getRandomInt(0, 10);
+    secondNo = getRandomInt(0, 10);
     var tfRandomizer = getRandomInt(0, 1);
     if (tfRandomizer == 1) {
         sumDisp = firstNo + secondNo;
@@ -28,7 +28,7 @@ function clear() {
     document.getElementById('timer').innerHTML = `${timerCount}`;
 }
 function countdownReset() {
-    timerCount = 2;
+    timerCount = 1.5;
     document.getElementById('timer').innerHTML = `${timerCount}`;
     countdown = setInterval(() => {
         timerCount = (timerCount - 0.01).toFixed(2);
@@ -46,7 +46,7 @@ function startGame() {
         document.getElementById("start-box").style.borderStyle = "dashed";
         score = 0;
         displayPrompt();
-        failTimer = setTimeout(falseResponse, 2000);
+        failTimer = setTimeout(falseResponse, 1500);
         setTimeout(countdownReset(), 0);
 
     } else {
@@ -56,15 +56,17 @@ function startGame() {
 function trueResponse() {
     clear();
     score++;
+    yesSound.play();
+    yesSound.currentTime = 0;
     document.getElementById("score").textContent = score;
     console.log(score);
     displayPrompt();
-    failTimer = setTimeout(falseResponse, 2000);
+    failTimer = setTimeout(falseResponse, 1500);
     setTimeout(countdownReset(), 0);
 }
 function falseResponse() {
     clear();
-
+    noSound.play();
     gameState = 0;
     if (highScore < score) {
         highScore = score;
@@ -78,6 +80,7 @@ function falseResponse() {
     document.getElementById("prompt-box").textContent = '';
     document.getElementById("start-box").style.borderStyle = "solid";
 }
+//----------------------------------------------------------------------------
 function inputTrue() {
     if (gameState == 1) {
         if (firstNo + secondNo == sumDisp) {
@@ -100,6 +103,7 @@ function inputFalse() {
         document.getElementById("console-box").textContent = 'No game is ongoing'
     }
 }
+//--------------------------------------------------------------------------
 function timerOnOff() {
     timerSwitch++;
     if (timerSwitch % 2 == 1) {

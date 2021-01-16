@@ -42,7 +42,7 @@ body {
     margin-top: 0px;
 }
 #score-disp {
-    display: inline-block;
+    display: block;
     text-align: center;
     float: right;
     clear:both;
@@ -52,6 +52,14 @@ body {
 }
 #score {
     font-size: 30px;
+}
+#timer-settings {
+    display: block;
+    text-align: center;
+}
+#score-settings {
+    display: block;
+    text-align: center;
 }
 #prompt-box {
     display: block;
@@ -72,7 +80,7 @@ body {
     background-color: rgb(0, 207, 0);
 }
 #false-box {
-    display: inline-block;
+    display: block;
     float: right;
     width: 40%;
     text-align: center;
@@ -91,6 +99,7 @@ body {
     padding: 5px;
     font-size: 30px;
     border: rgb(0, 255, 0) solid 2px;
+    user-select: none;
 }
 #start-box:hover {
     background-color: rgb(0, 207, 0);
@@ -104,4 +113,5 @@ body {
     padding: 5px;
     font-size: 30px;
     border: rgb(0, 255, 0) solid 2px;
+    user-select: none;
 }
