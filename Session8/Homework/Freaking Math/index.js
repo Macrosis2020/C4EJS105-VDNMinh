@@ -29,6 +29,8 @@ function clear() {
 }
 function countdownReset() {
     timerCount = 1.5;
+    document.getElementById("slide-timer").style.width = "50%";
+    widthCount = 100;
     document.getElementById('timer').innerHTML = `${timerCount}`;
     countdown = setInterval(() => {
         timerCount = (timerCount - 0.01).toFixed(2);
@@ -37,7 +39,14 @@ function countdownReset() {
         } else {
             clear();
         }
-    }, 10)
+    }, 10);
+    slideDown = setInterval(() => {
+        widthCount = widthCount - 1;
+        document.getElementById("slide-timer").style.width = `${widthCount}%`
+        if (widthCount < 0) {
+            clearInterval(slideDown);
+        }
+    }, 15);
 }
 function startGame() {
     document.getElementById("console-box").textContent = ''
@@ -55,6 +64,7 @@ function startGame() {
 }
 function trueResponse() {
     clear();
+    clearInterval(slideDown);
     score++;
     yesSound.play();
     yesSound.currentTime = 0;
@@ -66,6 +76,7 @@ function trueResponse() {
 }
 function falseResponse() {
     clear();
+    clearInterval(slideDown);
     noSound.play();
     gameState = 0;
     if (highScore < score) {
