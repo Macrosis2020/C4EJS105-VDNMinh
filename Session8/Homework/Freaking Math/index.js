@@ -56,7 +56,7 @@ function startGame() {
         score = 0;
         displayPrompt();
         failTimer = setTimeout(falseResponse, 1500);
-        setTimeout(countdownReset(), 0);
+        setTimeout(countdownReset, 0);
 
     } else {
         document.getElementById("console-box").textContent = 'A game is ongoing';
