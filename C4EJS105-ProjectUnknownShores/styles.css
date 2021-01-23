@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-overflow: clip;
+    word-wrap: break-word;
+}
+.header {
+    border: cadetblue solid 5px;
+    text-align: center;
+    margin: auto;
+    font-size: 170%;
+    display: block;
+}
+.misc-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+.misc-btn {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border: cadetblue solid 2px;
+    margin: 10px;
+    padding: 3px;
+    font-size: 100%;
+}
+.misc-btn:hover {
+    background-color: rgb(57, 96, 97);
+}
+.main-box {
+    border: cadetblue solid 2px;
+    padding: 5px;
+    min-height: 200px;
+}
+#continue-btn {
+    text-align: center;
+    align-self: flex-end;
+    border-right: cadetblue solid 2px;
+    border-left: cadetblue solid 2px;
+    border-bottom: cadetblue solid 2px;
+    padding: 5px;
+    font-size: 100%; 
+}
+#continue-btn:hover {
+    background-color: rgb(57, 96, 97);
+}
+.sub-display {
+    display: flex;
+    justify-content: space-between;
+}
+.choice-box {
+    display: inline-flex;
+    width: 75%;
+    justify-content: center;
+    /* border: wheat 1px solid; */
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.choice-btn {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    border: cadetblue solid 2px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 100%;
+}
+.choice-btn:hover {
+    background-color: rgb(57, 96, 97);
+}
+.stats-box {
+    display: inline-flex;
+    width: 23.5%;
+    /* border: wheat 1px solid; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.items-btn {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    border: cadetblue solid 2px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 100%;
+}
+.items-btn:hover {
+    background-color: rgb(57, 96, 97);
+}
+.character-btn {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    border: cadetblue solid 2px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 100%;
+
+}
+.character-btn:hover {
+    background-color: rgb(57, 96, 97);
+}
