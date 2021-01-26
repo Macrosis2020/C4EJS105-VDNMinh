@@ -6,10 +6,10 @@ let userDatabase = [
         role: 'admin',
     },
     {
-        username: 'DummyUser',
+        username: 'dummyuser',
         password: '12345',
         email: 'dummyemail123@gmail.com',
         role: 'user',
     }
 ]
-let activeUser;
+let activeUser = [];

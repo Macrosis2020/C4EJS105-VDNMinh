@@ -1,3 +1,8 @@
+console.log(JSON.parse(localStorage.activeUser));
+console.log(JSON.parse(localStorage.userDatabase));
+// if (JSON.parse(localStorage.activeUser).length == 0) {
+//     document.getElementById("login-btn").style.display = "block";
+// }
 function showLoginForm() {
     document.getElementById("login-form-display").style.display = "block";
 }
@@ -27,10 +32,12 @@ function logInFunction() {
         }
     }
     if (registeredStatus == true) {
-        console.log(userDatabase[i]);
-        activeUser = userDatabase[i];
+        console.log(userDatabase[userIndex]);
+        activeUser.push(userDatabase[userIndex]);
+        localStorage.setItem('activeUser', JSON.stringify(activeUser));
+        console.log(JSON.parse(localStorage.activeUser));
         alert('Login Successfully!');
-        hideLoginForm()
+        hideLoginForm();
     } else {
         alert('Username or password not valid');
         document.getElementById('input-username').value = '';
@@ -67,6 +74,8 @@ function registerFunction() {
         console.log(newUser);
         userDatabase.push(newUser);
         console.log(userDatabase);
+        localStorage.setItem('userDatabase', JSON.stringify(userDatabase));
+        console.log(JSON.parse(localStorage.userDatabase));
         alert('Registered Successfully!');
         redirectToLogin();
     } else {
