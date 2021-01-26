@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div id="login-page" hidden>
+        <div class="form">
+            <form id="register-form" hidden>
+                <input type="text" placeholder="Enter your username" id="input-register-name" />
+                <input type="text" placeholder="Enter your email address" id="input-register-email" />
+                <input type="password" placeholder="Enter your password" id="input-register-password" />
+                <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" />
+                <button id="btn_reg" onclick="registerFunction()" type="button">CREATE</button>
+                <p class="message">Already registered? <a id="redirect-to-login" href="#">Sign In</a></p>
+            </form>
+            <form id="login-form">
+                <input type="text" placeholder="Enter your username" id="input-username" />
+                <input type="password" placeholder="Enter your password" id="input-password" />
+                <button onclick="logInFunction()" type="button"> LOGIN</button>
+                <p class="message">Not registered? <a id="redirect-to-register" href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="user-database.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
