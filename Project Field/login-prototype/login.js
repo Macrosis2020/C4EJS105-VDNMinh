@@ -1,3 +1,9 @@
+function showLoginForm() {
+    document.getElementById("login-form-display").style.display = "block";
+}
+function hideLoginForm() {
+    document.getElementById("login-form-display").style.display = "none";
+}
 function redirectToLogin() {
     document.getElementById("register-form").hidden = true;
     document.getElementById("login-form").hidden = false;
@@ -24,6 +30,7 @@ function logInFunction() {
         console.log(userDatabase[i]);
         activeUser = userDatabase[i];
         alert('Login Successfully!');
+        hideLoginForm()
     } else {
         alert('Username or password not valid');
         document.getElementById('input-username').value = '';
@@ -54,6 +61,7 @@ function registerFunction() {
         let newUser = {
             username: `${document.getElementById('input-register-name').value}`,
             password: `${document.getElementById('input-register-password').value}`,
+            email: `${document.getElementById('input-register-email').value}`,
             role: 'user',
         }
         console.log(newUser);

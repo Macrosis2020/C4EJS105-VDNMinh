@@ -8,9 +8,14 @@
 </head>
 <body>
 
-    <div id="login-page" hidden>
-        <div class="form">
+    <div id="main-page">
+        <div class="header">
+            <div id = "login-btn" onclick="showLoginForm()">Log In</div>
+        </div>
+        <br>
+        <div class="form" id="login-form-display" style="display: none">
             <form id="register-form" hidden>
+                <div class="close-login-btn" onclick="hideLoginForm()">CLOSE</div>
                 <input type="text" placeholder="Enter your username" id="input-register-name" />
                 <input type="text" placeholder="Enter your email address" id="input-register-email" />
                 <input type="password" placeholder="Enter your password" id="input-register-password" />
@@ -19,6 +24,7 @@
                 <p class="message">Already registered? <a id="redirect-to-login" href="#">Sign In</a></p>
             </form>
             <form id="login-form">
+                <div class="close-login-btn" onclick="hideLoginForm()">CLOSE</div>
                 <input type="text" placeholder="Enter your username" id="input-username" />
                 <input type="password" placeholder="Enter your password" id="input-password" />
                 <button onclick="logInFunction()" type="button"> LOGIN</button>
