@@ -9,7 +9,7 @@ body {
 	background-color: rgb(0, 0, 0);
 	padding: 3px;
 	height: fit-content;
-	min-height: 30px;
+	min-height: 50px;
 }
 #main-page {
 	background-color: rgb(252, 246, 255);
@@ -19,18 +19,87 @@ body {
 	display: block;
 	position: sticky;
 	background-repeat: inherit;
-  }
+}
 #login-btn {
 	color: white;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	padding: 2px;
 	user-select: none;
+	width: fit-content;
 }
 #login-btn:hover {
 	background-color: rgb(255, 255, 255);
 	color: black;
 }
-.close-login-btn {
+#admin-panel-btn {
+	margin-bottom: 5px; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	text-align: center; 
+	width: fit-content; 
+	padding: 3px; 
+	background-color: rgb(27, 27, 27); 
+	color: white; 
+	user-select: none;
+	border: black 1px solid;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#admin-panel-btn:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+#admin-panel {
+	background: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 360px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	font-size: 15px;
+	height: 160px;
+	overflow-y: auto;
+}
+.manage-btn {
+	color: white;
+	background-color: rgb(31, 177, 31);
+	width: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	user-select: none;
+}
+.manage-btn:hover {
+	background-color: rgb(18, 90, 18);
+}
+.manage-table {
+	font-family: 'Times New Roman', Times, serif;
+  	border-collapse: collapse;
+ 	width: 100%;
+}
+.manage-table tr td {
+	text-align: center;
+}
+.manage-table tr:nth-child(even) {
+	background-color: #dddddd;
+}
+.action-btn {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: black;
+	color: white;
+	padding: 3px;
+	width: 10px;
+	height: 10px;
+	user-select: none;
+	border: black 1px solid;
+}
+.action-btn:hover {
+	color: black;
+	background-color: white;
+}
+.close-modal-btn {
 	display: block;
 	width: 50px;
 	color: white;
@@ -40,8 +109,21 @@ body {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	user-select: none;
 }
-.close-login-btn:hover {
+.close-modal-btn:hover {
 	background-color: rgb(119, 119, 119);
+}
+.modal-bg {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
 }
 .form {
 	background: #FFFFFF;
@@ -53,6 +135,8 @@ body {
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	font-size: 15px;
+	height: 160px;
+	overflow-y: auto;
   }
 .form input {
 	background: #f2f2f2;

@@ -1,13 +1,16 @@
 console.log(JSON.parse(localStorage.activeUser));
 console.log(JSON.parse(localStorage.userDatabase));
-// if (JSON.parse(localStorage.activeUser).length == 0) {
-//     document.getElementById("login-btn").style.display = "block";
-// }
-function showLoginForm() {
-    document.getElementById("login-form-display").style.display = "block";
+userDatabase = JSON.parse(localStorage.userDatabase);
+let activeUserObj = JSON.parse(localStorage.activeUser);
+console.log(activeUserObj);
+document.getElementById('active-user').textContent = `Active User: ${activeUserObj[0].username}`;
+console.log(activeUserObj[0].role);
+
+function showLoginModal() {
+    document.getElementById("login-modal").style.display = "block";
 }
-function hideLoginForm() {
-    document.getElementById("login-form-display").style.display = "none";
+function hideLoginModal() {
+    document.getElementById("login-modal").style.display = "none";
 }
 function redirectToLogin() {
     document.getElementById("register-form").hidden = true;
@@ -37,8 +40,10 @@ function logInFunction() {
         localStorage.setItem('activeUser', JSON.stringify(activeUser));
         console.log(JSON.parse(localStorage.activeUser));
         alert('Login Successfully!');
-        hideLoginForm();
+        hideLoginModal();
+        location.reload();
     } else {
+        console.log(registeredStatus);
         alert('Username or password not valid');
         document.getElementById('input-username').value = '';
         document.getElementById('input-password').value = '';

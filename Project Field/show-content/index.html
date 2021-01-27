@@ -13,39 +13,86 @@
     <div id="main-page">
         <div class="header">
             <div id="user-info">
-                <div id="login-btn" onclick="showLoginForm()">Log In</div>
+                <div id="login-btn" onclick="showLoginModal()">Log In</div>
+                <div id="active-user"
+                    style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 80%;"></div>
             </div>
         </div>
         <br>
-        <div class="form" id="login-form-display" style="display: none">
-            <form id="register-form" hidden>
-                <div class="close-login-btn" onclick="hideLoginForm()">CLOSE</div>
-                <input type="text" placeholder="Enter your username" id="input-register-name" />
-                <input type="text" placeholder="Enter your email address" id="input-register-email" />
-                <input type="password" placeholder="Enter your password" id="input-register-password" />
-                <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" />
-                <button id="btn_reg" onclick="registerFunction()" type="button">CREATE</button>
-                <p class="message">Already registered? <a id="redirect-to-login" href="#">Sign In</a></p>
-            </form>
-            <form id="login-form">
-                <div class="close-login-btn" onclick="hideLoginForm()">CLOSE</div>
-                <input type="text" placeholder="Enter your username" id="input-username" />
-                <input type="password" placeholder="Enter your password" id="input-password" />
-                <button onclick="logInFunction()" type="button"> LOGIN</button>
-                <p class="message">Not registered? <a id="redirect-to-register" href="#">Create an account</a></p>
-            </form>
+        <div class="modal-bg" id="admin-panel-display">
+            <div id="admin-panel" style="border: black 4px solid;">
+                <div class="close-modal-btn" onclick="closeAdminPanel()" style="display: block;">CLOSE</div>
+                <div
+                    style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 30px; margin-bottom: 30px;">
+                    ADMIN PANEL</div>
+                <div>
+                    <div class="manage-btn" id="manage-post-btn"
+                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;"
+                        onclick="displayPostTable()">
+                        Manage Posts</div>
+                    <br>
+                    <div class="manage-btn" id="manage-users-btn"
+                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;">
+                        Manage Users</div>
+                    <br>
+                    <div id="managed-content-field" style="border: 2px solid black; padding: 5px; display: none;">
+                        <table class="manage-table" id='manage-table-content'>
+                        </table>
+                        <br>
+                        <div class="manage-btn" id="manage-post-btn"
+                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;"
+                        onclick="displayPostTable()">
+                        Create New Post</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
-            <input type="text" id="contentIndex" placeholder="Insert Content Index">
-            <button style="margin-bottom: 5px;" onclick="displayContentByIndex(document.getElementById('contentIndex').value)">Show Content</button>
+
         </div>
+        <div class="modal-bg" id="login-modal">
+            <div class="form" id="login-form-display">
+                <form id="register-form" hidden>
+                    <div class="close-modal-btn" onclick="hideLoginModal()">CLOSE</div>
+                    <input type="text" placeholder="Enter your username" id="input-register-name" />
+                    <input type="text" placeholder="Enter your email address" id="input-register-email" />
+                    <input type="password" placeholder="Enter your password" id="input-register-password" />
+                    <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" />
+                    <button id="btn_reg" onclick="registerFunction()" type="button">CREATE</button>
+                    <p class="message">Already registered? <a onclick="redirectToLogin()" id="redirect-to-login"
+                            href="#">Sign In</a></p>
+                    <br>
+                </form>
+                <form id="login-form">
+                    <div class="close-modal-btn" onclick="hideLoginModal()">CLOSE</div>
+                    <input type="text" placeholder="Enter your username" id="input-username" />
+                    <input type="password" placeholder="Enter your password" id="input-password" />
+                    <button onclick="logInFunction()" type="button"> LOGIN</button>
+                    <p class="message">Not registered? <a onclick="redirectToRegister()" id="redirect-to-register"
+                            href="#">Create an account</a></p>
+                    <br>
+                </form>
+            </div>
+        </div>
+        <!-- <div style="display: flex; justify-content: center;">
+            <input type="text" id="contentIndex" style="margin-bottom: 5px;" placeholder="Insert Content Index">
+            <button style="margin-bottom: 5px;"
+                onclick="displayContentByIndex(document.getElementById('contentIndex').value)">Show Content</button>
+        </div> -->
+        <div id="admin-panel-btn" onclick="openAdminPanel()" hidden>
+            ADMIN PANEL
+        </div>
+
+        <!-- CONTENT BOX STARTS HERE        -->
         <div id='content-box'>
+
         </div>
     </div>
     <script src="content-database.js"></script>
     <script src="user-database.js"></script>
     <script src="display-content.js"></script>
     <script src="login.js"></script>
+    <script src="admin-panel.js"></script>
 </body>
 
 </html>
