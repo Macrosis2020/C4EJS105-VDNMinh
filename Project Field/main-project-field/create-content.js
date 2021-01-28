@@ -6,6 +6,13 @@ let newActivities = [
     },
 ];
 function displayCreateForm() {
+    activityIndexCount = 0;
+    newActivities = [
+        {
+            index: 0,
+            ssCount: 1,
+        },
+    ];
     document.getElementById('content-box').innerHTML =
         `<div id='create-update-form'>
         <div style="margin: 0px 0px;">
@@ -187,7 +194,8 @@ function createPost() {
                 sub_content: {},
             }
             for (j = 0; j < newActivities[i].ssCount; j++) {
-                wipActivity.sub_content[`${document.getElementById(`act${i}-ss${j}i0`).textContent}`] = [`${document.getElementById(`act${i}-ss${j}i1`).textContent}`,
+                wipActivity.sub_content[`${document.getElementById(`act${i}-ss${j}i0`).textContent}`] = 
+                [`${document.getElementById(`act${i}-ss${j}i1`).textContent}`,
                 `${document.getElementById(`act${i}-ss${j}i2`).textContent}`,
                 `${document.getElementById(`act${i}-ss${j}i3`).textContent}`]
             }

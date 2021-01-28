@@ -136,5 +136,6 @@ function updatePost(i) {
         post[i].activities[j] = wipActivity;
     }
     console.log(post[i]);
+    resetPostIndex();
     alert('Post updated successfully!');
 }
