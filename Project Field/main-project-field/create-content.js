@@ -199,8 +199,8 @@ function createPost() {
             newPost.activities.push(wipActivity);
         }
     }
-    let activityIndexCount = 0;
-    let newActivities = [
+    activityIndexCount = 0;
+    newActivities = [
         {
             index: 0,
             ssCount: 1,
