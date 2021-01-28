@@ -21,7 +21,7 @@ function displayPostTable() {
         document.getElementById('manage-table-content').insertAdjacentHTML('beforeend',
             `
         <tr>
-            <td>${i+1}</td>
+            <td>${i + 1}</td>
             <td>${post[i].name}</td>
             <td>
                 <table style="margin: auto;">
@@ -36,8 +36,45 @@ function displayPostTable() {
         `)
     }
 }
+function displayUserTable() {
+    document.getElementById('managed-content-field').style.display = 'block';
+    document.getElementById('manage-table-content').innerHTML = `<tr>
+    <th>ID</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Email</th>
+    <th>Actions</th>
+    </tr>`;
+    for (i = 0; i < userDatabase.length; i++) {
+        document.getElementById('manage-table-content').insertAdjacentHTML('beforeend',
+            `
+        <tr>
+            <td>${i + 1}</td>
+            <td>${userDatabase[i].username}</td>
+            <td>${userDatabase[i].password}</td>
+            <td>${userDatabase[i].email}</td>
+            <td>
+                <table style="margin: auto;">
+                    <tr>
+                        <td class='action-btn' onclick="">Profile</td>
+                        <td class='action-btn' onclick="deleteUser(${i})">Delete</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        `)
+    }
+}
 function deleteContentByIndex(i) {
     post.splice(i, 1);
     resetPostIndex();
     displayPostTable();
+}
+function deleteUser(i) {
+    if (userDatabase[i].role = 'admin') {
+        alert('You don\'t have permission to delete an admin')
+    } else {
+        userDatabase.splice(i, 1);
+    }
+    displayUserTable();
 }

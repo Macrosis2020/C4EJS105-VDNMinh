@@ -33,7 +33,8 @@
                         Manage Posts</div>
                     <br>
                     <div class="manage-btn" id="manage-users-btn"
-                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;">
+                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;"
+                        onclick="displayUserTable()">
                         Manage Users</div>
                     <br>
                     <div id="managed-content-field" style="border: 2px solid black; padding: 5px; display: none;">
@@ -75,19 +76,27 @@
                 </form>
             </div>
         </div>
-        <!-- <div style="display: flex; justify-content: center;">
+        <div class="modal-bg" id="logout-modal" style="display: none;">
+            <div id='logout-form'>
+               <p>Do you want to log out?</p>
+               <div style="display: inline-block;" class='bw-flashing-btn' onclick="logOutFunction()">Yes</div>
+               <div style="display: inline-block;" class='bw-flashing-btn' onclick="hideLogoutModal()">No</div>
+            </div>
+        </div>
+    
+    <!-- <div style="display: flex; justify-content: center;">
             <input type="text" id="contentIndex" style="margin-bottom: 5px;" placeholder="Insert Content Index">
             <button style="margin-bottom: 5px;"
                 onclick="displayContentByIndex(document.getElementById('contentIndex').value)">Show Content</button>
         </div> -->
-        <div id="admin-panel-btn" onclick="openAdminPanel()" hidden>
-            ADMIN PANEL
-        </div>
+    <div id="admin-panel-btn" onclick="openAdminPanel()" hidden>
+        ADMIN PANEL
+    </div>
 
-        <!-- CONTENT BOX STARTS HERE        -->
-        <div id='content-box'>
-            
-        </div>
+    <!-- CONTENT BOX STARTS HERE        -->
+    <div id='content-box'>
+
+    </div>
     </div>
     </div>
     <script src="content-database.js"></script>

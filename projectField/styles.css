@@ -31,6 +31,7 @@ body {
 	color: black;
 }
 #logout-btn {
+	display: none;
 	color: white;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	padding: 2px;
@@ -38,6 +39,20 @@ body {
 	width: fit-content;
 }
 #logout-btn:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+.bw-flashing-btn {
+	display: none;
+	color: white;
+	background-color: black;
+	border: black 1px solid;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding: 2px;
+	user-select: none;
+	width: fit-content;
+}
+.bw-flashing-btn:hover {
 	background-color: rgb(255, 255, 255);
 	color: black;
 }
@@ -64,12 +79,26 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 400px;
+	max-width: 80%;
 	padding: 15px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	font-size: 15px;
 	height: 300px;
+	overflow-y: auto;
+}
+#logout-form {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	font-size: 15px;
+	width: fit-content;
+	height: fit-content;
 	overflow-y: auto;
 }
 .manage-btn {

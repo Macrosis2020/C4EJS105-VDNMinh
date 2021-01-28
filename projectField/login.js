@@ -1,5 +1,5 @@
 if(!localStorage.getItem("visited")){
-    localStorage.setItem('activeUser', JSON.stringify(activeUser))
+    localStorage.setItem('activeUser', JSON.stringify(activeUser));
     localStorage.setItem('userDatabase', JSON.stringify(userDatabase));
     localStorage.setItem("visited",true);
 }
@@ -8,11 +8,13 @@ userDatabase = JSON.parse(localStorage.userDatabase);
 let activeUserObj;
 activeUserObj = JSON.parse(localStorage.activeUser);
 console.log(activeUserObj);
-if (activeUserObj[0].username != 'asdsadsAFAFHEWRFHERF') {
+if (activeUserObj[0].username != 'no user logged in') {
     document.getElementById('active-user').textContent = `Active User: ${activeUserObj[0].username}`;
+    document.getElementById('login-btn').style.display = 'none';
+    document.getElementById('logout-btn').style.display = 'block';
+
 }
 console.log(activeUserObj[0].role);
-
 function showLoginModal() {
     document.getElementById("login-modal").style.display = "block";
 }
@@ -95,4 +97,22 @@ function registerFunction() {
         document.getElementById('input-register-password').value = '';
         document.getElementById('input-register-confirm-password').value = '';
     }
+}
+//--------------------------------------------------------------------------------------------
+//LOGOUT CODE
+function showLogoutModal() {
+    document.getElementById('logout-modal').style.display = "block";
+}
+function hideLogoutModal() {
+    document.getElementById('logout-modal').style.display = "none";
+}
+function logOutFunction() {
+    activeUser = [{
+        username: 'no user logged in',
+        password: 'a',
+        email: 'a',
+        role: 'none',
+    }];
+    localStorage.setItem('activeUser', JSON.stringify(activeUser));
+    location.reload();
 }

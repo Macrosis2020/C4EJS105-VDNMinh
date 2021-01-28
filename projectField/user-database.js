@@ -10,11 +10,23 @@ let userDatabase = [
         password: '12345',
         email: 'dummyemail123@gmail.com',
         role: 'user',
-    }
+    },
+    {
+        username: 'dummyuser2',
+        password: '125',
+        email: 'dummy123@gmail.com',
+        role: 'user',
+    },
+    {
+        username: 'dummyuser3',
+        password: 'lmao',
+        email: 'eeeeeeeeeeeeeeeeeeeeeee',
+        role: 'user',
+    },
 ]
 let activeUser = [{
-    username: 'asdsadsAFAFHEWRFHERF',
+    username: 'no user logged in',
     password: 'a',
-    email: 'aasdsadssd',
-    role: 'user',
+    email: 'a',
+    role: 'none',
 }];
