@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='create-update-form'>
+        <div style="margin: 0px 0px;">
+            <h1 style="text-align: center; margin-bottom: 5px;" id="form-function">CREATE/UPDATE POST</h1>
+            <!-- class: create-update -->
+            <div class='create-update'>
+                <!-- <h3 style="margin-bottom: 5px;">ID</h3>
+            <div><span id="id-box" class="textarea" role="textbox" contenteditable></span></div> -->
+
+                <h3 style="margin-bottom: 5px;">Name</h3>
+                <div><span id="content-name-box" class="textarea" role="textbox" aria-placeholder="Please use single line breaks only" contenteditable></span></div>
+<textarea id="content-name-box" class="textarea"></textarea>
+                <h3 style="margin-bottom: 5px;">Introduction Image Source</h3>
+                <div><span id="content-img-box" class="textarea" role="textbox" contenteditable></span></div>
+
+                <h3 style="margin-bottom: 5px;">Introduction</h3>
+                <!-- các đoạn là phần tử trong mảng nên .insertAdjacentHTML("beforebegin",'') in từng doạn, thêm bêb trong thẻ div-->
+                <div>
+                    <!-- thêm vào đây -->
+
+                    <!-- Đây là mẫu thêm content -->
+                    <span id="intro-content-box" class="textarea" role="textbox" contenteditable></span>
+                </div>
+
+                <h3 style="margin-bottom: 5px;">Activities</h3>
+                <!-- ______________________________ACTIVITIES_________________________ -->
+                <div id="act0" style="margin: 0% 2% 0; padding: 5px; border: 1px solid rgb(50, 6, 245);">
+                    <!-- NEW ACTIVITY -->
+                    <h3 style="margin-bottom: 5px; margin-top: 0px">Name</h3>
+                    <div><span class="activity-name textarea" role="textbox" contenteditable aria-multiline="true" aria-placeholder="Please use double line breaks"></span></div>
+
+                    <h3 style="margin-bottom: 5px;">Activity Image Source</h3>
+                    <div><span class="activity-img textarea" role="textbox" contenteditable></span></div>
+
+                    <h3 style="margin-bottom: 5px;">Activity Description</h3>
+                    <div><span class="activity-desc textarea" role="textbox" contenteditable></span></div>
+
+                    <h3 style="margin-bottom: 5px;">Activity Sub-sections</h3>
+                    <div id='sub-content-insert'>
+                        <!-- ______________________________SUB_CONTENT_________________________ -->
+                        <div id="act0-ss0"
+                            style="margin: 0% 2% 0; padding: 5px; border: 1px solid rgb(245, 22, 6);">
+
+                            <!-- _______________INSERT SUB_CONTENT_______________ -->
+
+                            <h3 style="margin-bottom: 5px; margin-top: 0px;">Sub-section Title</h3>
+                            <div><span class="sub-content[0] textarea" role="textbox" contenteditable></span>
+                            </div>
+
+                            <h3 style="margin-bottom: 5px;">Sub-section Description</h3>
+                            <div><span class="sub-content[1] textarea" role="textbox" contenteditable></span>
+                            </div>
+
+                            <h3 style="margin-bottom: 5px;">Sub-section Image Source</h3>
+                            <div><span class="sub-content[2] textarea" role="textbox" contenteditable></span>
+                            </div>
+
+                            <h3 style="margin-bottom: 5px;">Sub-section Image Description</h3>
+                            <div><span class="sub-content[3] textarea" role="textbox" contenteditable></span>
+                            </div>
+                            <br>
+                            <div>Display Title?</div>
+                            <select name="" id="">
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <button style="margin-top: 5px;">Add Sub-section</button>
+                </div>
+                <button style="margin-top: 5px;">Add Activity</button>
+            </div>
+            <br>
+            <button id='btn' style="display: block; margin:auto;">Confirm</button>
+        </div>
+    </div>
+</body>
+</html>

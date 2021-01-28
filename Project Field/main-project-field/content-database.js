@@ -12,7 +12,7 @@ post = [
             {
                 name :'Đi chợ đêm Hua Hin',
                 img :'https://divui.com/blog/wp-content/uploads/2016/12/chat-chai.jpg',
-                des : 'Hua Hin là thiên đường mua sắm xinh đẹp ở Thái Lan. Ấn tượng ở các khu chợ ở Hua Hin là phong cách vintage, cổ kính và tinh tế. Cùng khám phá nét đẹp quyến rũ của 5 khu chợ đêm Hua Hin nổi tiếng sau đây!',
+                des : ['Hua Hin là thiên đường mua sắm xinh đẹp ở Thái Lan. Ấn tượng ở các khu chợ ở Hua Hin là phong cách vintage, cổ kính và tinh tế. Cùng khám phá nét đẹp quyến rũ của 5 khu chợ đêm Hua Hin nổi tiếng sau đây!'],
                 sub_content :{ // nội dung như linh này: https://halotravel.vn/cho-dem-hua-hin/
                     //___________PHẢI TUÂN THỦ THEO MẪU DƯỚI:
                     // tieu de: ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
@@ -26,7 +26,7 @@ post = [
             },
             {
                 name :'Lặn biển khám phá Koh Talu',
-                img :['https://www.tourthailan.net.vn/images/diadiem/diadiem-2/Koh-Talu-1.jpg'],
+                img :'https://www.tourthailan.net.vn/images/diadiem/diadiem-2/Koh-Talu-1.jpg',
                 des :['Khi du lịch đến Hua Hin, một trong những hoạt động bạn không nên bỏ lỡ là tham quan đảo Koh Talu và tham gia lặn biển ở đảo này. Hãy thử trải nghiệm một thiên đường ngay ở dưới hạ giới với cảnh sắc thiên nhiên từ trên cạn đến dưới nước ở Koh Talu. Nếu bạn đang ở thị trấn Bangsaphan, chỉ mất 30 phút đi thuyền, bạn đã đặt chân đến được Koh Talu.', 'Koh Talu có những bãi biển với hàng cọ rì rào và những rạn san hô đẹp tuyệt. Ngoài thế giới đại dương phong phú, sự yên tĩnh tuyệt đối của nơi đây cũng là điểm thu hút du khách khi đến đảo. Với sự riêng tư của nó, bạn sẽ trải nghiệm được nhiều điều thú vị bất ngờ. Thưởng thức bữa trưa ngay tại đảo sẽ cho bạn một cảm giác khác biệt chưa từng có khi ăn một bữa ăn trên một vùng đất yên tĩnh hiền hòa này.', 'Và, khi bạn đến Koh Talu, ngoài việc được tự do khám phá đảo và tham gia các hoạt động dưới nước, hãy dành thời gian cho việc lặn biển. Lặn biển ở Koh Talu là một hoạt động thú vị bạn đừng nên bỏ qua khi đến đây. Đây là một nơi lý tưởng cho việc lặn biển, bạn sẽ khám phá được thế giới đại dương bao la và đa dạng ở Koh Talu. Và với những ai mới tập tành với môn lặn biển này, hãy yên tâm bởi bạn sẽ được lặn ở những vùng nước cạn, ở đó, bạn cũng sẽ chiêm ngưỡng được hệ sinh thái đa dạng ở biển trong xanh này.'],
                 sub_content :{},
             },
@@ -43,7 +43,7 @@ post = [
             {
                 name :'Khám phá Seoul trong 1 ngày',
                 img :'https://www.tugo.com.vn/wp-content/uploads/han-quoc-diem-den-yeu-thich-bac-nhat-cua-du-khach-trong-vai-nam-tro-lai-day.png',
-                des :'Seoul – thành phố năng động, hiện đại bậc nhất thế giới với nhịp sống nhộn nhịp nhưng đâu đó vẫn lưu giữ vẹn nguyên những nét tinh túy của nền văn hóa truyền thống vô cùng đặc sắc. Cũng bởi nguyên do đó nên nhiều du khách đã lựa chọn Seoul làm điểm đến lý tưởng cho các hành trình khám phá của mình. ',
+                des :['Seoul – thành phố năng động, hiện đại bậc nhất thế giới với nhịp sống nhộn nhịp nhưng đâu đó vẫn lưu giữ vẹn nguyên những nét tinh túy của nền văn hóa truyền thống vô cùng đặc sắc. Cũng bởi nguyên do đó nên nhiều du khách đã lựa chọn Seoul làm điểm đến lý tưởng cho các hành trình khám phá của mình. '],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Tham quan Bảo tàng Nghệ thuật Seoul': ['Bảo tàng nghệ thuật Seoul là bảo tàng hiện đại nằm trong một tòa nhà rộng lớn có kiến trúc đẹp mắt. Trong khi các triển lãm đặc biệt tại đây có thể khá đông đúc và có thu phí, thì triển lãm thường trực lại hoàn toàn miễn phí và thường không được nhiều người chú ý tới. Tham quan bảo tàng, bạn còn được hiểu rõ hơn về cuộc đời và những thành tựu to lớn của nghệ sĩ  Chun Kyung-ja nổi tiếng đóng góp cho nền nghệ thuật của đất nước Hàn Quốc.','https://www.tugo.com.vn/wp-content/uploads/bao-tang-nghe-thuat-seoul.png','Bảo tàng Nghệ thuật Seoul'],
@@ -57,7 +57,7 @@ post = [
             {
                 name: 'Seoul Sky ở Lotte World',
                 img: 'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/ae4biwajhwvfynznhngy/V%C3%A9%20V%C3%A0o%20C%E1%BB%ADa%20Seoul%20Sky%20%E1%BB%9E%20Th%C3%A1p%20Lotte%20World.jpg',
-                des: 'Khám phá những điều độc đáo về Lotte World Tower ở xứ sở kim chi. Nếu Landmak 81 là tòa nhà cao nhất ở Việt Nam với 81 tầng thì Lotte World Tower cũng là tòa nhà cao nhất Hàn Quốc với 123 tầng. Tòa nhà này cũng được xem là một trong những biểu tượng của Hàn Quốc. Gần như tất cả khách du lịch Hàn Quốc đều không thể bỏ qua tòa tháp này.',
+                des: ['Khám phá những điều độc đáo về Lotte World Tower ở xứ sở kim chi. Nếu Landmak 81 là tòa nhà cao nhất ở Việt Nam với 81 tầng thì Lotte World Tower cũng là tòa nhà cao nhất Hàn Quốc với 123 tầng. Tòa nhà này cũng được xem là một trong những biểu tượng của Hàn Quốc. Gần như tất cả khách du lịch Hàn Quốc đều không thể bỏ qua tòa tháp này.'],
                 sub_content:{
                     'Những điều đặc biệt của Lotte Tower ':['Công trình được lấy cảm hứng từ nét văn hóa truyền thống xen lẫn hiện đại của Hàn Quốc. Hình dáng của Lotte World Tower là sự hòa quyện hài hòa giữa chiếc bình gốm và chiếc bút lông thời xưa của đất nước Hàn Quốc. Đây là hai hiện vật làm nên chủ đề và thiết kế cho tòa nhà với đường cong đơn giản, mềm mại đại diện cho vẻ đẹp truyền thống lâu đời của Hàn Quốc. Phía đỉnh tháp có hình dáng hai đường chữ V soi ánh sáng hướng về sông Hàn, Tháp Namsan và khu trung tâm cổ của Seoul. Đây được xem là một ý tưởng rất đặc biệt và có một không hai của Lotte World Tower.', 'https://www.zila.com.vn/wp-content/uploads/2020/06/Lotte-Word-Tower-e1601342134222.jpg','Lotte Tower Hàn Quốc'],
                 },
@@ -76,7 +76,7 @@ post = [
             {
                 name :'Vui chơi ở công viên Fuji Q',
                 img :'https://image.thanhnien.vn/768/uploaded/ngocthanh/2019_07_15/image001_lmtz.jpg',
-                des :'Công viên Fuji-Q Highland là một trong những công viên giải trí nổi tiếng nhất Nhật Bản. Nếu bạn là một người ưa thích sự mạo hiểm thì chắc chắn không thể bỏ qua địa điểm này.',
+                des :['Công viên Fuji-Q Highland là một trong những công viên giải trí nổi tiếng nhất Nhật Bản. Nếu bạn là một người ưa thích sự mạo hiểm thì chắc chắn không thể bỏ qua địa điểm này.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Tàu lượn Fujiyama (130km/giờ)': ['Chuyến tàu được xem là Vua của tàu lượn siêu tốc và là tàu lượn siêu tốc cao nhất trong công viên. Trên thế giới, Fujiyama là chiếc tàu lượn cao thứ 8, dài thứ 5 và nhanh thứ 10.Tàu lượn cao gần 80 mét mang lại cho bạn một cái nhìn tuyệt đẹp về núi Phú Sĩ. Tàu lượn có tốc độ hơn 130km/giờ sẽ khiến những người thích cảm giác mạnh mê ly. Đây mới chính là điểm thu hút và thú vị của chiếc tàu lượn siêu tốc này.','https://image.thanhnien.vn/660/uploaded/ngocthanh/2019_07_15/image003_kime.jpg','Fujiyama - vua tàu lượn Nhật Bản'],
@@ -88,7 +88,7 @@ post = [
             {
                 name :'Thăm núi Phú Sĩ, hồ Suwa & Takayama',
                 img :'https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/plxajvd3isp7xdniuapo.webp',
-                des :'Di qua những khu trung tâm du lịch nhộn nhịp của Nhật và đến vài nơi yên bình nhất với chuyến đi 1 chiều này. Chuyến đi bạn được sắp xếp đến núi Fuji, hồ Suwa, đồi Shinshu, và Takayama trong 1 ngày. Với 2 chuyến đưa đón có ở Tokyo, chuyến đi này đảm bảo di chuyển nhanh chóng và dễ dàng đến nơi. Bắt đầu một ngày của bạn với chuyến đến trạm số 5 line Fuji Subaru, phát triển nhất trong tất cả 4 trạm Fuji thứ 5. Chuẩn bị máy ảnh cho cảnh đẹp ngoạn mục của 5 hồ Fuji đang chờ đón bạn. Kế tiếp, đến nhà hàng gần Fuji-Q Highland cho bữa trưa. Nhà hàng có thể phục vụ món chay, nên để chắc chắn cho thực đơn mong muốn của bạn hãy báo cho biết khi thanh toán nhé. Sau bữa ăn no nê, đến đài quan sát cho cảnh trên cao của hồ Suwa và đồi Shinshu. Mãn nhãn với chuyến dừng chân cuối cùng của bạn - Takayama, một thành phố được bao quanh bởi núi và cây xanh um tùm. Hòa mình vào văn hóa nơi này khi bạn đi dọc những con phố cổ, nơi kết thúc chuyến đi của bạn.',
+                des :['Di qua những khu trung tâm du lịch nhộn nhịp của Nhật và đến vài nơi yên bình nhất với chuyến đi 1 chiều này. Chuyến đi bạn được sắp xếp đến núi Fuji, hồ Suwa, đồi Shinshu, và Takayama trong 1 ngày. Với 2 chuyến đưa đón có ở Tokyo, chuyến đi này đảm bảo di chuyển nhanh chóng và dễ dàng đến nơi. Bắt đầu một ngày của bạn với chuyến đến trạm số 5 line Fuji Subaru, phát triển nhất trong tất cả 4 trạm Fuji thứ 5. Chuẩn bị máy ảnh cho cảnh đẹp ngoạn mục của 5 hồ Fuji đang chờ đón bạn. Kế tiếp, đến nhà hàng gần Fuji-Q Highland cho bữa trưa. Nhà hàng có thể phục vụ món chay, nên để chắc chắn cho thực đơn mong muốn của bạn hãy báo cho biết khi thanh toán nhé. Sau bữa ăn no nê, đến đài quan sát cho cảnh trên cao của hồ Suwa và đồi Shinshu. Mãn nhãn với chuyến dừng chân cuối cùng của bạn - Takayama, một thành phố được bao quanh bởi núi và cây xanh um tùm. Hòa mình vào văn hóa nơi này khi bạn đi dọc những con phố cổ, nơi kết thúc chuyến đi của bạn.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Mặt trời mọc':['Những người tham gia leo núi Phú Sĩ hẳn đều mong muốn được nhìn thấy cảnh mặt trời mọc từ đỉnh ngọn núi này. Cảnh những tia sáng mặt trời dần dần ló rạng sau những đám mây và bầu trời đêm quả là một khung cảnh tuyệt đẹp.','https://d20aeo683mqd6t.cloudfront.net/images/imgs/000/012/827/original/pixta_16625807_M_s.jpg?1556265232&d=750x750',''],
@@ -111,7 +111,7 @@ post = [
             {
                 name :'Thăm thú hồ Meihua',
                 img :'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/128def06-Meihua-Lake-Tour/Chuy%E1%BA%BFn%20du%20l%E1%BB%8Bch%20h%E1%BB%93%20Meihua.jpg',
-                des :'Dành thời gian nhàn nhã thăm Hồ Meihua để tận hưởng quang cảnh tự nhiên tuyệt đẹp. Bạn sẽ được chào đón với cây cỏ tươi tốt và không khí trong lành, nơi bạn có thể dành thời gian đi bộ, đi xe đạp và đi du thuyền trên hồ. Điểm nổi bật khác là Đền Sanqing - nằm trên sườn phía nam của hồ Meihua, kiến trúc của ngôi đền giống như các tòa án kiểu triều đình truyền thống và rất đáng xem. Hoàn thành buổi chiều của bạn với một bữa tiệc trà ngon miệng tại quán cà phê Salex khi bạn ngắm nhìn những khung cảnh hồ tuyệt đẹp.',
+                des :['Dành thời gian nhàn nhã thăm Hồ Meihua để tận hưởng quang cảnh tự nhiên tuyệt đẹp. Bạn sẽ được chào đón với cây cỏ tươi tốt và không khí trong lành, nơi bạn có thể dành thời gian đi bộ, đi xe đạp và đi du thuyền trên hồ. Điểm nổi bật khác là Đền Sanqing - nằm trên sườn phía nam của hồ Meihua, kiến trúc của ngôi đền giống như các tòa án kiểu triều đình truyền thống và rất đáng xem. Hoàn thành buổi chiều của bạn với một bữa tiệc trà ngon miệng tại quán cà phê Salex khi bạn ngắm nhìn những khung cảnh hồ tuyệt đẹp.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                     'a':['','https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/7b4311f2-Meihua-Lake-Tour/Chuy%E1%BA%BFndul%E1%BB%8Bchh%E1%BB%93Meihua.webp','Đạp xe, đi bộ và đi thuyền trong chuyến đi nửa ngày'],
@@ -122,7 +122,7 @@ post = [
             {
                 name :'Ngắm khinh khí cầu ở Đài Đông',
                 img :'https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/fbd6ba4e-Taitung-Hot-Air-Balloon-Tour---Klook.webp',
-                des :'Bay cao trên khinh khí cầu trải nghiệm không giống bất cứ ai. Tận hưởng khung cảnh tuyệt vời của những dòng sông và khe thung lũng xung quanh Đài Đông, tận hưởng nét đẹp của thiên nhiên qua nhiều góc nhìn khác nhau khi đứng giữa không. Khi bạn lướt nhẹ trên bầu trời và bay xuyên qua những đám mây tự hỏi khung cảnh xung quanh bên dưới bạn thế nào. Sau đó, đáp xuống và uống mừng với ly sâm banh, và nhận chứng nhận cho chuyến đi đáng nhớ cũng như trải nghiệm tuyệt vời đã đến với bạn.',
+                des :['Bay cao trên khinh khí cầu trải nghiệm không giống bất cứ ai. Tận hưởng khung cảnh tuyệt vời của những dòng sông và khe thung lũng xung quanh Đài Đông, tận hưởng nét đẹp của thiên nhiên qua nhiều góc nhìn khác nhau khi đứng giữa không. Khi bạn lướt nhẹ trên bầu trời và bay xuyên qua những đám mây tự hỏi khung cảnh xung quanh bên dưới bạn thế nào. Sau đó, đáp xuống và uống mừng với ly sâm banh, và nhận chứng nhận cho chuyến đi đáng nhớ cũng như trải nghiệm tuyệt vời đã đến với bạn.'],
             },
         ],
         type :['DaiLoan']
@@ -136,7 +136,7 @@ post = [
             {
                 name :'Sagano – Chuyến tàu lãng mạn',
                 img :'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/3916ca4c-/Chuy%E1%BA%BFnT%C3%A0uSaganoL%C3%A3ngM%E1%BA%A1n(Nh%E1%BA%ADnv%C3%A9%E1%BB%9FTrungT%C3%A2mOsaka).webp',
-                des :'Nhận trước vé tàu Sagano của bạn 1 cách tiện lợi ở trung tâm Osaka và chuẩn bị lên chuyến tàu lãng mạn ở gần Kyoto này từ Ga Kameoka. Vé của bạn sẽ có giá trị cho chuyến đi một chiều từ ga Kameoka đến ga Saga, (bạn cũng có thể đặt chuyến về riêng) đây là một trong những tuyến đường đẹp nhất ở Nhật Bản. Trong chuyến đi 25 phút này, bạn sẽ thấy một thiên đường phủ đầy tuyết vào mùa đông, cảnh vật bị che khuất bởi những cây phong màu đỏ thẫm vào mùa thu, quang cảnh xanh mướt mượt vào mùa hè, và tất nhiên, hoa anh đào nở rộ vào mùa xuân.',
+                des :['Nhận trước vé tàu Sagano của bạn 1 cách tiện lợi ở trung tâm Osaka và chuẩn bị lên chuyến tàu lãng mạn ở gần Kyoto này từ Ga Kameoka. Vé của bạn sẽ có giá trị cho chuyến đi một chiều từ ga Kameoka đến ga Saga, (bạn cũng có thể đặt chuyến về riêng) đây là một trong những tuyến đường đẹp nhất ở Nhật Bản. Trong chuyến đi 25 phút này, bạn sẽ thấy một thiên đường phủ đầy tuyết vào mùa đông, cảnh vật bị che khuất bởi những cây phong màu đỏ thẫm vào mùa thu, quang cảnh xanh mướt mượt vào mùa hè, và tất nhiên, hoa anh đào nở rộ vào mùa xuân.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Công viên Nara':['nơi đây sở hữu và bảo tồn một quần thể kiến trúc cổ độc đáo được UNESCO công nhận di sản Thế Giới: Công viên Nara – với đàn hươu sao hơn 1000 con đi tự do trong công viên (theo Thần Đạo của Nhật Bản thì hươu được xem là sứ giả của thần linh).','https://dulichnhatban.net/static/uploads/images/tynimce/2018/06/20/Saigontourist_Nhat-Ban_Cong-vien-Nara1.jpg', 'chu hou vang ngo ngac'],
@@ -149,7 +149,7 @@ post = [
             {
                 name :'Tắm suối nước nóng tại Hokkaido',
                 img :'https://rlx.jp/relux/img/hotelpictures/RP25766_1042.jpg?1574826965',
-                des :'Sau sự vội vã và nhộn nhịp xung quanh thị trấn, còn cách nào tốt hơn để thư giãn hơn là một chuyến đi trong ngày đến một spa và onsen nghỉ dưỡng tự nhiên sang trọng? Bạn sẽ khởi hành từ Ga Sapporo để đến khu nghỉ dưỡng nổi tiếng Jozankei Tsuruga Resort Mori No Uta. Tên gọi của nó, có nghĩa là Bài Thơ Của Khu Rừng, thật hoàn hảo với vị trí tuyệt đẹp nằm trong khu rừng Hokkaido tươi tốt. Khu nghỉ mát spa có các tiện nghi hàng đầu, từ các phòng mát-xa đến phòng xông hơi khô, ăn buffet và thậm chí cả nhà hàng. Nhưng đặc điểm nổi tiếng nhất của khu nghỉ mát spa này là onsen nổi tiếng hoặc suối nước nóng. Onsen truyền thống Nhật Bản ngoài trời được bao quanh bởi những khu rừng rậm rạp của Hokkaido. Đắm chìm trong làn nước nóng tự nhiên của nó và tận hưởng bầu không khí trẻ trung của thiên nhiên và cảm thấy căng thẳng của bạn cứ trôi tuột đi. Sau khi bạn đã tận hưởng cơ sở vật chất của spa, hãy gặp gỡ các thành viên còn lại của nhóm tại trạm xe buýt và trở về Sapporo một cách an toàn và sẵn sàng cho một ngày du lịch khác.',
+                des :['Sau sự vội vã và nhộn nhịp xung quanh thị trấn, còn cách nào tốt hơn để thư giãn hơn là một chuyến đi trong ngày đến một spa và onsen nghỉ dưỡng tự nhiên sang trọng? Bạn sẽ khởi hành từ Ga Sapporo để đến khu nghỉ dưỡng nổi tiếng Jozankei Tsuruga Resort Mori No Uta. Tên gọi của nó, có nghĩa là Bài Thơ Của Khu Rừng, thật hoàn hảo với vị trí tuyệt đẹp nằm trong khu rừng Hokkaido tươi tốt. Khu nghỉ mát spa có các tiện nghi hàng đầu, từ các phòng mát-xa đến phòng xông hơi khô, ăn buffet và thậm chí cả nhà hàng. Nhưng đặc điểm nổi tiếng nhất của khu nghỉ mát spa này là onsen nổi tiếng hoặc suối nước nóng. Onsen truyền thống Nhật Bản ngoài trời được bao quanh bởi những khu rừng rậm rạp của Hokkaido. Đắm chìm trong làn nước nóng tự nhiên của nó và tận hưởng bầu không khí trẻ trung của thiên nhiên và cảm thấy căng thẳng của bạn cứ trôi tuột đi. Sau khi bạn đã tận hưởng cơ sở vật chất của spa, hãy gặp gỡ các thành viên còn lại của nhóm tại trạm xe buýt và trở về Sapporo một cách an toàn và sẵn sàng cho một ngày du lịch khác.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Tận hưởng trải nghiệm onsen độc đáo tại khu nghỉ mát Jozankei Tsuruga Resort Spa nổi tiếng':['','https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/exegdlb0yzfqjmbvsgzx/TourT%E1%BA%AFmSu%E1%BB%91iN%C6%B0%E1%BB%9BcN%C3%B3ng%E1%BB%9FHokkaidoJozankeiResortSpaMoriNoUta.webp',''],
@@ -170,7 +170,7 @@ post = [
             {
                 name :'Tận hưởng thể thao mạo hiểm',
                 img :'https://dulichcatvang.com/wp-content/uploads/2017/05/den-Pattaya-Thai-Lan-kham-pha-thien-duong-dao-san-ho-koh-larn-ivivu-13.jpg',
-                des :'',
+                des :[''],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                     'Thám hiểm Pattaya với xe ATV':['Hãy xuống đường, để lại sự hối hả và nhộn nhịp đằng sau và khám phá vùng nông thôn Thái Lan nguyên sơ cách chưa đến nửa giờ đi từ thành phố bận rộn. Nhảy lên xe ATV và lái dọc theo tuyến đường mòn. Tận hưởng ánh nắng mặt trời hoặc lưới qua bùn - chuyến phiêu lưu trên ATV thú vị trong bất kỳ thời tiết nào và chỉ khiến bạn muốn đi thêm. Chưa bao giờ lái ATV? Đừng lo - sẽ không cần kinh nghiệm gì cả đâu, rồi bạn sẽ trở thành 1 tay lái xe ATV nhập Mỹ hàng đầu. Chiếc xe rất dễ để điều khiển và bạn có thể lái nó ngay lập tức. Vậy nên, hãy đạp ga và bắt đầu cuộc vui nào','https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/6082fdae-Pattaya-ATV-Adventure-ATV-/Th%C3%A1mHi%E1%BB%83mPattayaV%E1%BB%9BiXeATV.webp','Khám phá Pattaya trên chuyến đi vui vẻ bằng ATV'],
@@ -182,7 +182,7 @@ post = [
             {
                 name :'Vi vu chợ nổi',
                 img :'https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/04/chonoi-pattaya-bangkok-thailan-vntrip-e1523608277239.jpg',
-                des :'Thái Lan sở hữu cho mình rất nhiều địa điểm hấp dẫn khách du lịch. Trong số đó, không thể không nhắc đến chợ nổi Pattaya, một khu chợ độc đáo của xứ Chùa Vàng. Những mặt hàng được bày bán ở đây rất đa dạng nhưng hấp dẫn nhất vẫn là những món ăn vặt đường phố hấp dẫn cùng những chiếc thuyền đầy ắp hoa quả tươi ngon luôn là những mặt hàng hấp dẫn khách du lịch.',
+                des :['Thái Lan sở hữu cho mình rất nhiều địa điểm hấp dẫn khách du lịch. Trong số đó, không thể không nhắc đến chợ nổi Pattaya, một khu chợ độc đáo của xứ Chùa Vàng. Những mặt hàng được bày bán ở đây rất đa dạng nhưng hấp dẫn nhất vẫn là những món ăn vặt đường phố hấp dẫn cùng những chiếc thuyền đầy ắp hoa quả tươi ngon luôn là những mặt hàng hấp dẫn khách du lịch.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc'
                     'Đôi nét về chợ nổi Pattaya':['Được đưa vào hoạt động năm 2008, khu chợ này có diện tích lên đến 100.000 mét vuông, và có tên gọi đầy đủ là chợ nổi Bốn Miền (Four Regions Floating Market). Nơi đây được quy hoạch và chia thành 4 khu vực riêng biệt, tượng trưng cho bốn miền của Thái Lan bao gồm Bắc, Trung, Nam và vùng Đông Bắc. Mỗi khu vực lại bán những vật dụng, hàng hóa, sản vật đặc trưng của từng vùng miền.','https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/04/cho-noi-vntrip-e1523607389307.jpg','Khu chợ nổi nổi tiếng của Thái Lan'],
@@ -204,7 +204,7 @@ post = [
             {
                 name :'Tham quan đảo James Bond',
                 img :'https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/fl_lossy.progressive,q_85/c_fill,w_680/fl_lossy.progressive/q_auto/f_auto/blogvn/2019/08/du-lich-krabi-cap-doi.webp',
-                des :'Đảo James Bond là một địa danh nổi tiếng thuộc vịnh Phang Nga, miền Nam Thái Lan. Còn được gọi tên tiếng Thái là Ko Tapu nghĩa là hòn đảo đinh, đồi đinh.',
+                des :['Đảo James Bond là một địa danh nổi tiếng thuộc vịnh Phang Nga, miền Nam Thái Lan. Còn được gọi tên tiếng Thái là Ko Tapu nghĩa là hòn đảo đinh, đồi đinh.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                      'Đôi nét về hòn đảo nổi tiếng James Bond':['Được tìm thấy lần đầu tiên và được đưa vào bản đồ du lịch quốc tế khi xuất hiện trong khung cảnh của bộ phim "Người đàn ông với súng ống vàng" của nam diễn viên nổi tiếng tài năng James Bond. Và tên gọi của hòn đảo cũng xuất phát từ lý do này.','https://tour.dulichvietnam.com.vn/uploads/image/du-lich-thai-lan/Phuket/dao-james-bond/james-bond-island.jpg','James Bond - hòn đảo nổi tiếng nhất thuộc Vịnh Phang Nga'],
@@ -215,7 +215,7 @@ post = [
             {
                 name :'Tham quan trên đảo Koh Phi Phi',
                 img :'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_750,h_1500,f_auto/w_46,x_8,y_8,g_south_west,l_klook_water/activities/jfuitczvc3ir879jkg6r/[SALE]TourNg%C3%A0y%C4%90%E1%BA%A3oPhiPhiT%E1%BB%ABKrabiB%E1%BA%B1ngThuy%E1%BB%81nCaoT%E1%BB%91cho%E1%BA%B7ct%C3%A0uCatamaran(%C4%90i%E1%BB%81uh%C3%A0nhb%E1%BB%9FiTTD).webp',
-                des :'Được mệnh danh là hòn ngọc của vùng biển Andaman, Đảo Phi Phi là 1 trong những địa điểm nhất định phải đến ở Thái Lan. Trong chuyến đi đến đảo Phi Phi, bạn sẽ có thể ghé thăm 1 vài địa điểm đặc trưng như Bãi Biển Maya, nơi quay bộ phim phiêu lưu The Beach của tài tử Leonardo DiCaprio năm 2000. Sau bữa ăn trưa thư giãn, bạn sẽ dừng lại ở các khu vườn san hô đầy màu sắc tuyệt đẹp của Vịnh Monkey và lặn để khám phá cuộc sống biển phong phú của nơi này. Thưởng thức một chuyến đi thuyền thư giãn sẽ đưa bạn dọc theo cảnh quan đáng kinh ngạc và dòng nước đổi màu - hãy chụp những bức ảnh hấp dẫn và cảm nhận làn gió biển tươi mát trên làn da của bạn.',
+                des :['Được mệnh danh là hòn ngọc của vùng biển Andaman, Đảo Phi Phi là 1 trong những địa điểm nhất định phải đến ở Thái Lan. Trong chuyến đi đến đảo Phi Phi, bạn sẽ có thể ghé thăm 1 vài địa điểm đặc trưng như Bãi Biển Maya, nơi quay bộ phim phiêu lưu The Beach của tài tử Leonardo DiCaprio năm 2000. Sau bữa ăn trưa thư giãn, bạn sẽ dừng lại ở các khu vườn san hô đầy màu sắc tuyệt đẹp của Vịnh Monkey và lặn để khám phá cuộc sống biển phong phú của nơi này. Thưởng thức một chuyến đi thuyền thư giãn sẽ đưa bạn dọc theo cảnh quan đáng kinh ngạc và dòng nước đổi màu - hãy chụp những bức ảnh hấp dẫn và cảm nhận làn gió biển tươi mát trên làn da của bạn.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                     'Tour sunset và ngắm cá phát sáng plankton trên biển đêm':['Tour được tham quan các đảo như đảo hải tặc Pirate, Maya,( nơi ngắm hoàng hôn tuyệt đẹp, phí vào Maya là 100B), ngắm lagoon nước xanh ngọc và lặn ngắm san hô, cá đủ màu sắc, xem plankton.Tour khởi hành từ 1:30pm đến 7pm.Đa số các tour ở Koh Phi Phi đi bằng long tail với sức chứa 20 người. Nếu bạn đi bằng tàu party thì giá gấp 5 lần và cũng đi những chỗ y hệt.','http://kenh14cdn.com/k:thumb_w/600/Z3WxvDWHkkhwglFfVOnyhzOPBKmr9M/Image/2014/01/blog-01/bio-3-903da/xem-bo-bien-dom-dom-phat-sang-tuyet-dep-o-maldives.jpg',''],
@@ -238,7 +238,7 @@ post = [
             {
                 name :'Thưởng ngoạn Arashiyama',
                 img :'https://resources.matcha-jp.com/resize/720x2000/2019/05/16-77137.jpeg',
-                des :'Arashiyama là địa điểm thăm quan nổi tiếng ở cố đô Kyoto với các địa danh thăm quan như chùa Tenryuji, con đường ở rừng trúc và các công trình có bề dày lịch sử. Bài viết này sẽ giới thiệu các địa điểm thăm quan và các thông tin hữu ích cho việc thăm quan.',
+                des :['Arashiyama là địa điểm thăm quan nổi tiếng ở cố đô Kyoto với các địa danh thăm quan như chùa Tenryuji, con đường ở rừng trúc và các công trình có bề dày lịch sử. Bài viết này sẽ giới thiệu các địa điểm thăm quan và các thông tin hữu ích cho việc thăm quan.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                     'Con đường ở rừng trúc':['là địa điểm tiêu biểu ở Arashiyama. Chắc chắn có nhiều người đã từng xem những bức ảnh với không gian thần bí và màu xanh phong phú qua SNS. Tuy vậy “trăm nghe không bằng một thấy”. Các bạn hãy thử tản bộ ở đây để cảm nhận không gian như lạc vào một thế giới khác. Ở đây mở cửa suốt 24 giờ.','https://resources.matcha-jp.com/resize/720x2000/2019/05/16-77091.jpeg','Con đường ở rừng trúc'],
@@ -260,7 +260,7 @@ post = [
             {
                 name :'6 hoạt động không nên bỏ lỡ ở Phan Thiết – Mũi Né',
                 img :'https://www.chudu24.com/wp-content/uploads/2018/08/du-lich-mui-ne-phan-thiet.jpg',
-                des :'Du lịch hè Phan Thiết – Mũi Né, ghé thăm những làng chài lúc tờ mờ sáng, lướt SUV, hay ngắm hoàng hôn từ ngọn hải đăng… là những hoạt động mà bạn nên tham gia trải nghiệm để cảm nhận về vẻ đẹp của vùng biển Bình Thuận đầy nắng và gió.',
+                des :['Du lịch hè Phan Thiết – Mũi Né, ghé thăm những làng chài lúc tờ mờ sáng, lướt SUV, hay ngắm hoàng hôn từ ngọn hải đăng… là những hoạt động mà bạn nên tham gia trải nghiệm để cảm nhận về vẻ đẹp của vùng biển Bình Thuận đầy nắng và gió.'],
                 sub_content:{
                      // 'tieu de': ['noi_dung','link_anh', 'phan_mo_ta_anh'] in ra theo thu tu nay la dc
                     'Ghé thăm làng chài vào tờ mờ sáng':['Dạo chợ Mũi Né và những làng chài ven biển vào lúc bình minh, bạn vừa có  dịp ngắm Mặt trời mọc vừa được xem bức tranh chân thật nhất về cuộc sống của ngư dân Việt Nam. Những bong thuyền cặp bờ đầy ắp cá tôm, các loại hải sản cua, ghẹ… để trao đổi với chủ nhà hàng, thương lái. Những  mẻ lưới, rổ rá đầy ắp hải sản tươi, những giọt mồ hôi đọng lại trên nụ cười các thành viên trong gia đình sau mỗi cuộc mưu sinh sẽ cho các bạn những cảm nhận mới về cuộc sống.','https://photo2.tinhte.vn/data/attachment-files/2020/11/5220874_collage_3.jpg',''],

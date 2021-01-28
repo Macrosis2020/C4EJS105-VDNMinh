@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="edit-form.css">
 </head>
 
 <body>
@@ -40,9 +41,9 @@
                         </table>
                         <br>
                         <div class="manage-btn" id="manage-post-btn"
-                        style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;"
-                        onclick="displayPostTable()">
-                        Create New Post</div>
+                            style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px; margin-bottom: 5px;"
+                            onclick="displayCreateForm()">
+                            Create New Post</div>
                     </div>
                 </div>
             </div>
@@ -85,14 +86,16 @@
 
         <!-- CONTENT BOX STARTS HERE        -->
         <div id='content-box'>
-
+            
         </div>
+    </div>
     </div>
     <script src="content-database.js"></script>
     <script src="user-database.js"></script>
     <script src="display-content.js"></script>
     <script src="login.js"></script>
     <script src="admin-panel.js"></script>
+    <script src="create-content.js"></script>
 </body>
 
 </html>
