@@ -27,7 +27,7 @@ function displayPostTable() {
                 <table style="margin: auto;">
                     <tr>
                         <td class='action-btn' onclick="displayContentByIndex(${i})">R</td>
-                        <td class='action-btn'>U</td>
+                        <td class='action-btn' onclick="displayUpdateForm(${i})">U</td>
                         <td class='action-btn' onclick="deleteContentByIndex(${i})">D</td>
                     </tr>
                 </table>
@@ -38,5 +38,6 @@ function displayPostTable() {
 }
 function deleteContentByIndex(i) {
     post.splice(i, 1);
+    resetPostIndex();
     displayPostTable();
 }

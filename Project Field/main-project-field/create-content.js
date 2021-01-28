@@ -68,7 +68,7 @@ function displayCreateForm() {
                         <option value='no'>No</option>
                     </select>
                     <br>
-                    <button style="margin-top: 5px;" onclick="addSubSection(${0})">Add Sub-section</button>
+                    <button style="margin-top: 5px;" onclick="addSubSection(0)">Add Sub-section</button>
                 </div>
                 </div>
                 <button style="margin-top: 5px;" onclick="addActivity()">Add Activity</button>
@@ -172,33 +172,42 @@ function addSubSection(activityIndex) {
 };
 function createPost() {
     let newPost = {
-        id : post.length + 1,
-        name : document.getElementById('content-name-box').innerText,
-        img : document.getElementById('content-img-box').innerText,
-        content : String(document.getElementById('intro-content-box').innerText).split(/\r?\n/),
+        id: post.length + 1,
+        name: document.getElementById('content-name-box').innerText,
+        img: document.getElementById('content-img-box').innerText,
+        content: String(document.getElementById('intro-content-box').innerText).split(/\r?\n/),
     };
     newPost.activities = [];
     {
-        for (i=0;i<=activityIndexCount;i++) {
-           let wipActivity = {
-               name: document.getElementById(`act${i}-activity-name`).innerText,
-               img: document.getElementById(`act${i}-activity-img`).innerText,
-               des: String(document.getElementById(`act${i}-activity-desc`).innerText).split(/\r?\n/),
-               sub_content: {},
-           }
-           for (j=0;j<newActivities[i].ssCount;j++) {
-               wipActivity.sub_content[`${document.getElementById(`act${i}-ss${j}i0`).textContent}`] = [`${document.getElementById(`act${i}-ss${j}i1`).textContent}`,
-               `${document.getElementById(`act${i}-ss${j}i2`).textContent}`,
-               `${document.getElementById(`act${i}-ss${j}i3`).textContent}`]
-           }
-           if (document.getElementById(`act${i}-title-status`).value == 'yes') {
+        for (i = 0; i <= activityIndexCount; i++) {
+            let wipActivity = {
+                name: document.getElementById(`act${i}-activity-name`).innerText,
+                img: document.getElementById(`act${i}-activity-img`).innerText,
+                des: String(document.getElementById(`act${i}-activity-desc`).innerText).split(/\r?\n/),
+                sub_content: {},
+            }
+            for (j = 0; j < newActivities[i].ssCount; j++) {
+                wipActivity.sub_content[`${document.getElementById(`act${i}-ss${j}i0`).textContent}`] = [`${document.getElementById(`act${i}-ss${j}i1`).textContent}`,
+                `${document.getElementById(`act${i}-ss${j}i2`).textContent}`,
+                `${document.getElementById(`act${i}-ss${j}i3`).textContent}`]
+            }
+            if (document.getElementById(`act${i}-title-status`).value == 'yes') {
                 wipActivity['subcontentTitle'] = true;
-           } else {
+            } else {
                 wipActivity['subcontentTitle'] = false;
-           }
-           newPost.activities.push(wipActivity);
+            }
+            newPost.activities.push(wipActivity);
         }
     }
+    let activityIndexCount = 0;
+    let newActivities = [
+        {
+            index: 0,
+            ssCount: 1,
+        },
+    ];
     post.push(newPost);
     console.log(newPost);
+    resetPostIndex();
+    alert('New post created successfully!');
 }

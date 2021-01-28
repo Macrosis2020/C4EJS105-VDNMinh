@@ -77,4 +77,5 @@ function displayContentByIndex(i) {
         }
         document.getElementById('content-box').insertAdjacentHTML('beforeend', activitiesHTML);
     }
+    closeAdminPanel();
 }
