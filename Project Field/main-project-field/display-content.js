@@ -1,4 +1,3 @@
-console.log(typeof(post[3].activities[1].des));
 function displayContentByIndex(i) {
     document.getElementById('content-box').innerHTML = `
     <div style="text-align: center; font-size: 300%; margin-bottom: 10px;">${post[i].name}</div>

@@ -1,3 +1,10 @@
+let activityIndexCount = 0;
+let newActivities = [
+    {
+        index: 0,
+        ssCount: 1,
+    },
+];
 function displayCreateForm() {
     document.getElementById('content-box').innerHTML =
         `<div id='create-update-form'>
@@ -79,13 +86,6 @@ function displayCreateForm() {
     </div>`;
     closeAdminPanel()
 }
-let activityIndexCount = 0;
-let newActivities = [
-    {
-        index: 0,
-        ssCount: 1,
-    },
-];
 function addActivity() {
     activityIndexCount++;
     let newActivity = {

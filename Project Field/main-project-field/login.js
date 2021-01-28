@@ -1,9 +1,16 @@
-console.log(JSON.parse(localStorage.activeUser));
+if(!localStorage.getItem("visited")){
+    localStorage.setItem('activeUser', JSON.stringify(activeUser))
+    localStorage.setItem('userDatabase', JSON.stringify(userDatabase));
+    localStorage.setItem("visited",true);
+}
 console.log(JSON.parse(localStorage.userDatabase));
 userDatabase = JSON.parse(localStorage.userDatabase);
-let activeUserObj = JSON.parse(localStorage.activeUser);
+let activeUserObj;
+activeUserObj = JSON.parse(localStorage.activeUser);
 console.log(activeUserObj);
-document.getElementById('active-user').textContent = `Active User: ${activeUserObj[0].username}`;
+if (activeUserObj[0].username != 'asdsadsAFAFHEWRFHERF') {
+    document.getElementById('active-user').textContent = `Active User: ${activeUserObj[0].username}`;
+}
 console.log(activeUserObj[0].role);
 
 function showLoginModal() {
@@ -36,7 +43,7 @@ function logInFunction() {
     }
     if (registeredStatus == true) {
         console.log(userDatabase[userIndex]);
-        activeUser.push(userDatabase[userIndex]);
+        activeUser[0] = userDatabase[userIndex];
         localStorage.setItem('activeUser', JSON.stringify(activeUser));
         console.log(JSON.parse(localStorage.activeUser));
         alert('Login Successfully!');

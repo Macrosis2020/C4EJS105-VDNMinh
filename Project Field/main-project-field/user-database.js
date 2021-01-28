@@ -12,4 +12,9 @@ let userDatabase = [
         role: 'user',
     }
 ]
-let activeUser = [];
+let activeUser = [{
+    username: 'asdsadsAFAFHEWRFHERF',
+    password: 'a',
+    email: 'aasdsadssd',
+    role: 'user',
+}];
