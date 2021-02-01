@@ -1,4 +1,7 @@
 function displayContentByIndex(i) {
+    document.getElementById('main').hidden = true;
+    document.getElementById('content-box').hidden = false;
+    // ___________________________________________________________
     document.getElementById('content-box').innerHTML = `
     <div style="text-align: center; font-size: 300%; margin-bottom: 10px;">${post[i].name}</div>
     <img src="${post[i].img}" alt="Img not found"

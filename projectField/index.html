@@ -5,22 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="edit-form.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/edit-form.css">
+
 </head>
 
 <body>
-    <div id="main-page">
-        <div class="header">
-            <div id="user-info">
-                <div id="login-btn" onclick="showLoginModal()">Log In</div>
-                <div id="logout-btn" onclick="showLogoutModal()">Log Out</div>
-                <div id="active-user"
-                    style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 80%;"></div>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Travel Review</a>
+            </div>
+            <div class='toggle-collapse'>
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href='#' onclick="back_home()">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href='#'>
+                            <div>Category</div>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href='#'>
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href='#'>
+                            <div>Contact Us</div>
+                        </a>
+                    </li>
+                    <li class="nav-link" id='login-btn'>
+                        <a href='#' onclick="showLoginModal()">
+                        <div>Log In</div>
+                    </a>
+                    </li>
+                    <li class="nav-link" id='logout-btn'>
+                        <a href='#' onclick="showLogoutModal()">
+                            <div>Log Out</div>
+                        </a>
+                    </li>
+                    <li class="nav-link" id="admin-panel-btn">
+                        <a href='#' onclick="openAdminPanel()">Admin Panel</a>
+                    </li>
+                </ul>
+                <!-- <div id="user-info" style="margin-top: 15px;">
+                    <div id="login-btn" onclick="showLoginModal()">Log In</div>
+                    <div id="logout-btn" onclick="showLogoutModal()">Log Out</div> -->
+                <div id="active-user" style="color:black; font-family: var(--Abel);; font-size: 80%; margin-top: 5px;">
+                </div>
             </div>
         </div>
-        <br>
-        <div class="modal-bg" id="admin-panel-display">
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        </div>
+    </nav>
+
+
+    <div id="main-page">
+        <div class="modal-bg" id="admin-panel-display" style="font-family: var(--Abel);">
             <div id="admin-panel" style="border: black 4px solid;">
                 <div class="close-modal-btn" onclick="closeAdminPanel()" style="display: block;">CLOSE</div>
                 <div
@@ -49,9 +107,7 @@
                 </div>
             </div>
         </div>
-        <div>
 
-        </div>
         <div class="modal-bg" id="login-modal">
             <div class="form" id="login-form-display">
                 <form id="register-form" hidden>
@@ -78,28 +134,62 @@
         </div>
         <div class="modal-bg" id="logout-modal" style="display: none;">
             <div id='logout-form'>
-               <p>Do you want to log out?</p>
-               <div style="display: inline-block;" class='bw-flashing-btn' onclick="logOutFunction()">Yes</div>
-               <div style="display: inline-block;" class='bw-flashing-btn' onclick="hideLogoutModal()">No</div>
+                <p>Do you want to log out?</p>
+                <div style="display: inline-block;" class='bw-flashing-btn' onclick="logOutFunction()">Yes</div>
+                <div style="display: inline-block;" class='bw-flashing-btn' onclick="hideLogoutModal()">No</div>
             </div>
         </div>
-    
-    <!-- <div style="display: flex; justify-content: center;">
+
+        <!-- <div style="display: flex; justify-content: center;">
             <input type="text" id="contentIndex" style="margin-bottom: 5px;" placeholder="Insert Content Index">
             <button style="margin-bottom: 5px;"
                 onclick="displayContentByIndex(document.getElementById('contentIndex').value)">Show Content</button>
         </div> -->
-    <div id="admin-panel-btn" onclick="openAdminPanel()" hidden>
-        ADMIN PANEL
+
+        <!-- CONTENT BOX STARTS HERE        -->
+        <div id='content-box' hidden>
+
+        </div>
     </div>
 
-    <!-- CONTENT BOX STARTS HERE        -->
-    <div id='content-box'>
+    <!----------------------------- Main Site Section ------------------------------>
+    <main id="main">
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Travel Review</h3>
+                <h1>Come with us, see the wonders of our world</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+        <!-- --------------------- Blog Carousel ----------------- -->
 
-    </div>
-    </div>
-    </div>
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post" id="blog-post">
+                        <!-- Carousel HERE  -->
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+    </main>
+    <!---------------x------------- Main Site Section ---------------x-------------->
+    <!-- ___________________________________________________ -->
+    <!-- Jquery Lib file -->
+    <script src="./jsView/Jquery3.4.1.min.js"></script>
+    <!-- Owl-Carousel -->
+    <script src="jsView/owl.carousel.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./jsView/main.js"></script>
     <script src="content-database.js"></script>
+    <script src="./jsView/blogCarousel.js"></script>
     <script src="user-database.js"></script>
     <script src="display-content.js"></script>
     <script src="login.js"></script>

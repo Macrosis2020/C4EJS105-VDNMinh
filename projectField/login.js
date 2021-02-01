@@ -14,7 +14,7 @@ if (activeUserObj[0].username != 'no user logged in') {
     document.getElementById('logout-btn').style.display = 'block';
 
 }
-console.log(activeUserObj[0].role);
+console.log(activeUserObj[0]);
 function showLoginModal() {
     document.getElementById("login-modal").style.display = "block";
 }

@@ -71,7 +71,8 @@ function deleteContentByIndex(i) {
     displayPostTable();
 }
 function deleteUser(i) {
-    if (userDatabase[i].role = 'admin') {
+    console.log(userDatabase[i]);
+    if (userDatabase[i].role == 'admin') {
         alert('You don\'t have permission to delete an admin')
     } else {
         userDatabase.splice(i, 1);
