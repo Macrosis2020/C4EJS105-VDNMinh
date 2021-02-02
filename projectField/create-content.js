@@ -6,6 +6,10 @@ let newActivities = [
     },
 ];
 function displayCreateForm() {
+    document.getElementById('main').hidden = true;
+    document.getElementById('content-box').hidden = false;   
+    window.scrollTo(0,0);
+    // ___________________________________________________________
     activityIndexCount = 0;
     newActivities = [
         {

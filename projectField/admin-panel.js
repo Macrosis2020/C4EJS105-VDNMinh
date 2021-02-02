@@ -35,7 +35,7 @@ function displayPostTable() {
         </tr>
         `)
     }
-    document.getElementById('manage-post-btn').style.display = 'block';
+    document.getElementById('create-post-btn').style.display = 'block';
 }
 function displayUserTable() {
     document.getElementById('managed-content-field').style.display = 'block';
@@ -65,7 +65,7 @@ function displayUserTable() {
         </tr>
         `)
     }
-    document.getElementById('manage-post-btn').style.display = 'none';
+    document.getElementById('create-post-btn').style.display = 'none';
 }
 function deleteContentByIndex(i) {
     post.splice(i, 1);

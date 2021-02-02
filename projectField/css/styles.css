@@ -88,7 +88,7 @@ p{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 15vh;
+    min-height: 14vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -123,6 +123,7 @@ p{
 .nav .nav-items{
     display: flex;
     margin: 0;
+    height: 100%;
 }
 
 .nav .nav-items .nav-link{
@@ -494,13 +495,6 @@ main .post-content .post-title a{
 	font-size: 14px;
 	border: 0;
   }
-  .form button {
-	background: #71bc42;
-	border: 0;
-	padding: 15px;
-	color: #FFFFFF;
-	width: 100%;
-  }
   .form-btn {
     border: black 1px solid;
     color: black;
@@ -581,7 +575,7 @@ main .post-content .post-title a{
 
 /*              Viewport less then or equal to 520px            */
 
-/* @media only screen and (max-width: 520px){
+@media only screen and (max-width: 520px){
     main .blog{
         height: 125vh;
     }
@@ -603,6 +597,6 @@ main .post-content .post-title a{
         width: 80% !important;
     }
 
-} */
+}
 
 /*        x      Viewport less then or equal to 520px       x     */

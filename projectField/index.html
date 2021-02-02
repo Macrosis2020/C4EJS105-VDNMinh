@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/edit-form.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -67,12 +69,6 @@
             </div>
         </div>
         </div>
-        <div class="social text-gray">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
         </div>
     </nav>
 
@@ -97,10 +93,10 @@
                         <table class="manage-table" id='manage-table-content'>
                         </table>
                         <br>
-                        <div class="manage-btn" id="manage-post-btn"
-                            style="text-align: center; font-size: 20px; margin-bottom: 5px;"
+                        <div class="manage-btn" id="create-post-btn"
+                            style="text-align: center; font-size: 20px; display: none; margin-bottom: 5px;""
                             onclick="displayCreateForm()">
-                            Create New Post</div>
+                            Create Post</div>
                     </div>
                 </div>
             </div>
@@ -111,10 +107,10 @@
             <div class="form" id="login-form-display">
                 <div id="register-form" hidden>
                     <div class="close-modal-btn" onclick="hideLoginModal()">X</div>
-                    <input type="text" placeholder="Enter your username" id="input-register-name" />
-                    <input type="text" placeholder="Enter your email address" id="input-register-email" />
-                    <input type="password" placeholder="Enter your password" id="input-register-password" />
-                    <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" />
+                    <input type="text" placeholder="Enter your username" id="input-register-name" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="text" placeholder="Enter your email address" id="input-register-email" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="password" placeholder="Enter your password" id="input-register-password" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" style="margin-left: auto; margin-right: auto;"/>
                     <br>
                     <div id="btn_reg" class="form-btn" onclick="registerFunction()">CREATE</div>
                     <p class="message">Already registered? <a onclick="redirectToLogin()" id="redirect-to-login"
@@ -123,11 +119,11 @@
                     </div>
                 <div id="login-form">
                     <div class="close-modal-btn" onclick="hideLoginModal()">X</div>
-                    <input type="text" placeholder="Enter your username" id="input-username" />
-                    <input type="password" placeholder="Enter your password" id="input-password" />
+                    <input type="text" placeholder="Enter your username" id="input-username" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="password" placeholder="Enter your password" id="input-password" style="margin-left: auto; margin-right: auto;"/>
                     <br>
                     <div class="form-btn" onclick="logInFunction()">LOG IN</div>
-                    <p class="message">Not registered? <a onclick="redirectToRegister()" id="redirect-to-register"
+                    <p class="message" style="margin-left: auto; margin-right: auto;">Not registered? <a onclick="redirectToRegister()" id="redirect-to-register"
                             href="#">Create an account</a></p>
                     <br>
                     </div>
@@ -158,7 +154,7 @@
     </div>
     <!-- ACCOUNT MODAL -->
     <!-- CONTENT BOX STARTS HERE        -->
-    <div id='content-box' hidden style="font-family: 'Open Sans Condensed';">
+    <div id='content-box' hidden style="font-family: 'Barlow', sans-serif;">
 
     </div>
     </div>
@@ -210,13 +206,6 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="pagination flex-row">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" class="pages">1</a>
-                        <a href="#" class="pages">2</a>
-                        <a href="#" class="pages">3</a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
-                    </div>
                 </div>
                 <!-- CATEGORY SIDEBAR -->
                 <aside class="sidebar">

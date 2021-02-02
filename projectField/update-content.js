@@ -9,6 +9,10 @@ function displayTextFromArray(arr) {
 }
 let activeUpdateIndex;
 function displayUpdateForm(i) {
+    document.getElementById('main').hidden = true;
+    document.getElementById('content-box').hidden = false;   
+    window.scrollTo(0,0);
+    // ___________________________________________________________
     newActivities = [];
     activityIndexCount = 0;
     document.getElementById('content-box').innerHTML =
