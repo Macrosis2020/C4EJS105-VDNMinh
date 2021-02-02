@@ -37,7 +37,7 @@ post = [
             },
             
         ],
-        type: ['ThaiLan'],
+        type: ['Thailand'],
     },
     {
         id :2,
@@ -69,7 +69,7 @@ post = [
                 subcontentTitle: true,
             }   
         ],
-        type :['HanQuoc'],
+        type :['South Korea'],
     },
     {
 
@@ -104,7 +104,7 @@ post = [
             },
            
         ],
-        type :['NhatBan'],
+        type :['Japan'],
     },
     {
 
@@ -132,7 +132,7 @@ post = [
                 subcontentTitle: false,
             },
         ],
-        type :['DaiLoan']
+        type :['Taiwan']
     },
     {
     id :5,
@@ -166,7 +166,7 @@ post = [
                 subcontentTitle: true,
             },
         ],
-        type :['NhatBan'],
+        type :['Japan'],
     },
     {
         id :6,
@@ -200,7 +200,7 @@ post = [
             },
             
         ],
-        type :['ThaiLan'],
+        type :['Thailand'],
     },
     {
         id : 7,
@@ -233,7 +233,7 @@ post = [
                 subcontentTitle: true,
             },
         ],
-        type :['ThaiLan']
+        type :['Thailand']
     },
     {
 
@@ -255,7 +255,7 @@ post = [
                 subcontentTitle: true,
             },
         ],
-        type :['NhatBan'],
+        type :['Japan'],
     },
     {
 
@@ -278,6 +278,6 @@ post = [
             },
            
         ],
-        type :['VietNam']
+        type :['Vietnam']
     },
 ]

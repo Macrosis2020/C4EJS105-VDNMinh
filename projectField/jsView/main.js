@@ -26,9 +26,9 @@ $(document).ready(function () {
     // owl-crousel for blog
     $('.owl-carousel').owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
-        dots: false,
+        dots: true,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: responsive

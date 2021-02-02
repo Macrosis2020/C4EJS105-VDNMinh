@@ -1,6 +1,7 @@
 function displayContentByIndex(i) {
     document.getElementById('main').hidden = true;
-    document.getElementById('content-box').hidden = false;
+    document.getElementById('content-box').hidden = false;   
+    window.scrollTo(0,0);
     // ___________________________________________________________
     document.getElementById('content-box').innerHTML = `
     <div style="text-align: center; font-size: 300%; margin-bottom: 10px;">${post[i].name}</div>

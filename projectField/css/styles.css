@@ -1,10 +1,8 @@
 @import url('../css/fonts.css');
 html, body{
 	margin: 0;
-	/* padding: 0; */
-	/* background-color: rgb(252, 246, 255); */
 		box-sizing: border-box;
-		/* overflow: hidden; */
+		overflow-x: hidden;
 }
 :root{
 	/*      Theme colors        */
@@ -25,7 +23,9 @@ html, body{
     --Livvic : 'Livvic', cursive;
 }
 /* ---------------- Global Classes ---------------*/
-
+::placeholder {
+    font-family: var(--Abel);
+}
 a{
     text-decoration: none;
     color: var(--text-gray);
@@ -88,7 +88,7 @@ p{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 13vh;/*10*/
+    min-height: 15vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -117,7 +117,7 @@ p{
 }
 
 .collapse{
-    height: 30rem;
+    height: fit-content;
 }
 
 .nav .nav-items{
@@ -126,11 +126,12 @@ p{
 }
 
 .nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
+    padding: 1.4rem 1rem;
     font-size: 1.1rem;
     position: relative;
     font-family: var(--Abel);
     font-size: 1.1rem;
+    width: fit-content;
 }
 
 .nav .nav-items .nav-link:hover{
@@ -147,6 +148,7 @@ p{
     display: block;
     font-family: var(--Lexend);
     font-size: 1.6rem;
+    width: fit-content;
 }
 
 .nav .social{
@@ -162,10 +164,12 @@ p{
 }
 
 /* -------x------- navbar ---------x------- */
-/* ___________________main content_____________ */
-/* ___________________img title_____________ */
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../Images/Background-image.png');
+    background: url('../Images/bg-img.png');
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -230,49 +234,104 @@ main .blog-content .btn-blog{
 main .blog-content span{
     display: block;
 }
-
-section .container .owl-nav{
-    position: absolute;
-    top: 0%;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.owl-nav .owl-prev .owl-nav-prev,
-.owl-nav .owl-next .owl-nav-next{
-    color: var(--text-gray);
-    background: transparent;
-    font-size: 2rem;
-}
-
-.owl-theme .owl-nav [class*='owl-']:hover{
-    background: transparent;
-    color: var(--midnight);
-}
-
-.owl-theme .owl-nav [class*='owl-']{
-    outline: none;
-}
-
-
 /* -------x------- Blog Carousel -----x------ */
+
+/* ---------------- Site Content ----------------*/
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width: 100%;
+    
+}
+
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a{
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages{
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+/* -------x-------- Site Content --------x-------*/
+
+/* --------------- Sidebar ----------------------- */
+
+.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);   
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color:  black;
+}
+
+/* -------x------- Sidebar -----------x----------- */
 /* ___x_______________main content________x____ */
-/* .header {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	background-color: #b3d7ff;
-	padding: 3px;
-	height: fit-content;
-	min-height: 50px;
-} */
-/* #main-page {
-	background-size: 100%;
-	padding-bottom: 30px;
-	display: block;
-	position: sticky;
-	background-repeat: inherit;
-} */
 .bw-flashing-btn {
 	display: none;
 	color: white;
@@ -294,14 +353,36 @@ section .container .owl-nav{
 	margin-right: auto;
 	max-width: 80%;
 	padding: 15px;
-	text-align: center;
+    text-align: center;
+    font-family: var(--Lexend);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	font-size: 15px;
 	height: 300px;
 	overflow-y: auto;
 }
-#logout-form {
+#account-panel {
+    background: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30%;
+	padding: 15px;
+    text-align: center;
     font-family: var(--Lexend);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	font-size: 15px;
+	height: fit-content;
+	overflow-y: auto;
+}
+#logout-btn {
+    border: black 1px solid;
+}
+#logout-btn:hover {
+    background-color: black;
+    color: white;
+}
+#logout-form {
+    font-family: var(--Abel);
 	background: #FFFFFF;
 	display: block;
 	margin-left: auto;
@@ -327,7 +408,7 @@ section .container .owl-nav{
 	background-color: rgb(18, 90, 18);
 }
 .manage-table {
-	font-family: 'Times New Roman', Times, serif;
+	font-family: var(--Lexend);
   	border-collapse: collapse;
  	width: 100%;
 }
@@ -354,13 +435,13 @@ section .container .owl-nav{
 	display: block;
 	width: 50px;
 	color: white;
-	background-color: rgb(163, 163, 163);
+	background-color: rgb(255, 0, 0);
 	margin-left: 2px;
 	margin-bottom: 10%;
 	user-select: none;
 }
 .close-modal-btn:hover {
-	background-color: rgb(119, 119, 119);
+	background-color: rgb(146, 0, 0)
 }
 .modal-bg {
 	display: none; 
@@ -375,17 +456,32 @@ section .container .owl-nav{
 	background-color: rgb(0,0,0); 
 	background-color: rgba(0,0,0,0.4);
 }
+.logout-modal-bg {
+	display: none; 
+	position: fixed; 
+	z-index: 3; 
+	padding-top: 50px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+}
 .form {
+    font-family: var(--Abel);
 	background: #FFFFFF;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 360px;
+	max-width: 40%;
 	padding: 45px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	font-size: 15px;
-	/* height: 160px; */
+    height: fit-content;
+    border: black solid 5px;
 	overflow-y: auto;
   }
 .form input {
@@ -405,8 +501,19 @@ section .container .owl-nav{
 	color: #FFFFFF;
 	width: 100%;
   }
-  .form button:hover {
-	background: #43A047;
+  .form-btn {
+    border: black 1px solid;
+    color: black;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-btn:hover {
+      color: white;
+      background-color: black;
   }
   .form .message {
 	color: #b3b3b3;
@@ -414,7 +521,8 @@ section .container .owl-nav{
 	font-size: 12px;
   }
   .form .message a {
-	color: #4CAF50;
+    color: #000000;
+    text-decoration: underline;
   }
   #content-box {
 	  background-color: white;
@@ -457,13 +565,13 @@ section .container .owl-nav{
         display: initial;
     }
 
-    /* main .site-content{
+    main .site-content{
         grid-template-columns: 100%;
     }
 
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
-    } */
+    }
 
 }
 

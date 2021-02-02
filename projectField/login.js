@@ -9,10 +9,13 @@ let activeUserObj;
 activeUserObj = JSON.parse(localStorage.activeUser);
 console.log(activeUserObj);
 if (activeUserObj[0].username != 'no user logged in') {
-    document.getElementById('active-user').textContent = `Active User: ${activeUserObj[0].username}`;
+    document.getElementById('active-user').textContent = `${activeUserObj[0].username}`;
+    document.getElementById('active-user-role').textContent = `Permissions: ${activeUserObj[0].role}`;
     document.getElementById('login-btn').style.display = 'none';
-    document.getElementById('logout-btn').style.display = 'block';
-
+    document.getElementById('account-btn').style.display = 'block';
+} else {
+    document.getElementById('login-btn').style.display = 'block';
+    document.getElementById('account-btn').style.display = 'none';
 }
 console.log(activeUserObj[0]);
 function showLoginModal() {
@@ -115,4 +118,11 @@ function logOutFunction() {
     }];
     localStorage.setItem('activeUser', JSON.stringify(activeUser));
     location.reload();
+}
+//ACOUNT MODAL
+function showAccountModal() {
+    document.getElementById('account-modal').style.display = "block"
+}
+function closeAccountModal() {
+    document.getElementById('account-modal').style.display = "none"
 }
