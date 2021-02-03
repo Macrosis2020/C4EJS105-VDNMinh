@@ -544,9 +544,6 @@ main .post-content .post-title a{
     }
 
 }
-.nav-link {
-    min-width: 80%;
-}
 /*      x       Viewport less then or equal to 1130px    x     */
 
 
@@ -568,10 +565,10 @@ main .post-content .post-title a{
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .nav-link {
+        min-width: 80%;
+    }
 
-}
-.nav-link {
-    min-width: 80%;
 }
 
 /*        x      Viewport less then or equal to 750px       x     */
@@ -600,8 +597,9 @@ main .post-content .post-title a{
     nav .toggle-collapse{
         width: 80% !important;
     }
+    .nav-link {
+        min-width: 80%;
+    }
 
 }
-.nav-link {
-    min-width: 80%;
-}
+
