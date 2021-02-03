@@ -50,4 +50,5 @@ $(document).ready(function () {
 function back_home(){
     document.getElementById('main').hidden = false;
     document.getElementById('content-box').hidden = true;
+    location.reload()
 }

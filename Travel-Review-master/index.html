@@ -18,7 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -37,12 +39,12 @@
                     <li class="nav-link" onclick="back_home()">
                         <a href='#'>Home</a>
                     </li>
-                    <li class="nav-link">
-                        <a href='#cate_type'>
+                    <li class="nav-link" onclick="window.location.href='#cate_type'">
+                        <a>
                             <div>Category</div>
                         </a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link" onclick="window.location.href='#footer'">
                         <a href='#'>
                             <div>Contact Us</div>
                         </a>
@@ -95,7 +97,7 @@
                         <br>
                         <div class="manage-btn" id="create-post-btn"
                             style="text-align: center; font-size: 20px; display: none; margin-bottom: 5px;""
-                            onclick="displayCreateForm()">
+                            onclick=" displayCreateForm()">
                             Create Post</div>
                     </div>
                 </div>
@@ -107,26 +109,32 @@
             <div class="form" id="login-form-display">
                 <div id="register-form" hidden>
                     <div class="close-modal-btn" onclick="hideLoginModal()">X</div>
-                    <input type="text" placeholder="Enter your username" id="input-register-name" style="margin-left: auto; margin-right: auto;"/>
-                    <input type="text" placeholder="Enter your email address" id="input-register-email" style="margin-left: auto; margin-right: auto;"/>
-                    <input type="password" placeholder="Enter your password" id="input-register-password" style="margin-left: auto; margin-right: auto;"/>
-                    <input type="password" placeholder="Confirm your password" id="input-register-confirm-password" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="text" placeholder="Enter your username" id="input-register-name"
+                        style="margin-left: auto; margin-right: auto;" />
+                    <input type="text" placeholder="Enter your email address" id="input-register-email"
+                        style="margin-left: auto; margin-right: auto;" />
+                    <input type="password" placeholder="Enter your password" id="input-register-password"
+                        style="margin-left: auto; margin-right: auto;" />
+                    <input type="password" placeholder="Confirm your password" id="input-register-confirm-password"
+                        style="margin-left: auto; margin-right: auto;" />
                     <br>
                     <div id="btn_reg" class="form-btn" onclick="registerFunction()">CREATE</div>
                     <p class="message">Already registered? <a onclick="redirectToLogin()" id="redirect-to-login"
                             href="#">Sign In</a></p>
                     <br>
-                    </div>
-                <div id="login-form">
+                </div>
+                <div id="login-form" style="margin-left: auto; margin-right: auto;">
                     <div class="close-modal-btn" onclick="hideLoginModal()">X</div>
-                    <input type="text" placeholder="Enter your username" id="input-username" style="margin-left: auto; margin-right: auto;"/>
-                    <input type="password" placeholder="Enter your password" id="input-password" style="margin-left: auto; margin-right: auto;"/>
+                    <input type="text" placeholder="Enter your username" id="input-username"
+                        style="margin-left: auto; margin-right: auto;" />
+                    <input type="password" placeholder="Enter your password" id="input-password"
+                        style="margin-left: auto; margin-right: auto;" />
                     <br>
                     <div class="form-btn" onclick="logInFunction()">LOG IN</div>
-                    <p class="message" style="margin-left: auto; margin-right: auto;">Not registered? <a onclick="redirectToRegister()" id="redirect-to-register"
-                            href="#">Create an account</a></p>
+                    <p class="message" style="margin-left: auto; margin-right: auto;">Not registered? <a
+                            onclick="redirectToRegister()" id="redirect-to-register" href="#">Create an account</a></p>
                     <br>
-                    </div>
+                </div>
             </div>
         </div>
         <!-- LOGIN MODAL -->
@@ -155,7 +163,30 @@
     <!-- ACCOUNT MODAL -->
     <!-- CONTENT BOX STARTS HERE        -->
     <div id='content-box' hidden style="font-family: 'Barlow', sans-serif;">
+        <div id="review-area" style="width: 70%; margin-left: auto; margin-right: auto;"></div>
 
+        <div style="width: 80%; margin: auto; font-family: var(--Lexend);">
+            <div style="margin-top: 20px; margin-bottom: 10px; text-align: center; font-size: 200%; font-weight: bold;">
+                See more from us</div>
+            <div id="see-more-box"
+                style="display: flex; width: 90%; margin: auto; justify-content: center; flex-wrap: wrap;">
+                <!-- <div class="see-more-option" style="position: relative;
+           text-align: center;
+           color: white;"
+           onclick="">
+               <img src="https://thongtinhanquoc.com/wp-content/uploads/2019/08/tthq-lang-ihwa03.jpg" alt="" style="width: 100%; 
+               height: auto;
+               border: white 3px solid;
+               margin: 2px;
+               box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.411), 0 0 rgba(0, 0, 0, 0.431);">
+               <div style="position: absolute;
+               bottom: 10px;
+               left: 10px;
+               font-weight: bolder;
+               text-shadow: 1px 1px #000000;">Text text text</div>
+           </div> -->
+            </div>
+        </div>
     </div>
     </div>
 
@@ -179,9 +210,10 @@
                 </div>
             </div>
         </section>
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
         <!-- ---------------------- Site Content -------------------------->
 
-        <section class="container">
+        <section class="container" style="margin-top: 25%;">
             <div class="site-content">
                 <div id="filteredPosts" class="posts">
                     <!-- POST HERE -->
@@ -221,10 +253,60 @@
 
         <!-- -----------x---------- Site Content -------------x------------>
 
-        <!-- ----------x---------- Blog Carousel --------x-------- -->
     </main>
     <!---------------x------------- Main Site Section ---------------x-------------->
 
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer id="footer" class="footer" style="margin-top: 30px;">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="" alt="insta1">
+                    <img src="" alt="insta2">
+                    <img src="" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="" alt="insta4">
+                    <img src="" alt="insta5">
+                    <img src="" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
 
 
     <!-- ___________________________________________________ -->

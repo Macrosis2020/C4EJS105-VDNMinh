@@ -45,5 +45,5 @@ function filterByType(type_name)
 let aos_delay = 50;
 for(let i in typeObj)
 {
-    document.getElementById('cate-list').insertAdjacentHTML('beforeend', `<li class="list-items" data-aos="fade-left" data-aos-delay=${aos_delay += 50}><a onclick="filterByType('${i}')">${i}</a><span>${typeObj[i]}</span></li>`);
+    document.getElementById('cate-list').insertAdjacentHTML('beforeend', `<li class="list-items" onclick="filterByType('${i}')" data-aos="fade-left" data-aos-delay=${aos_delay += 50}><a >${i}</a><span>${typeObj[i]}</span></li>`);
 }
