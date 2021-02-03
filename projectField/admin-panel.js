@@ -44,6 +44,7 @@ function displayUserTable() {
     <th>Username</th>
     <th>Password</th>
     <th>Email</th>
+    <th>Permissions</th>
     <th>Actions</th>
     </tr>`;
     for (i = 0; i < userDatabase.length; i++) {
@@ -54,10 +55,10 @@ function displayUserTable() {
             <td>${userDatabase[i].username}</td>
             <td>${userDatabase[i].password}</td>
             <td>${userDatabase[i].email}</td>
+            <td>${userDatabase[i].role}</td>
             <td>
                 <table style="margin: auto;">
                     <tr>
-                        <td class='action-btn' onclick="">Profile</td>
                         <td class='action-btn' onclick="deleteUser(${i})">Delete</td>
                     </tr>
                 </table>
