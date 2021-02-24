@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+          <div class="close-btn" onclick="closeModal()">Close</div>
+          <div id="page-details" style="text-align: center;">
+              <div id='page-image'></div>
+              <div id='page-name'></div>
+              <div id='page-tier'></div>
+              <div id='page-abno'></div>
+              <div id='page-type'></div>
+              <div id='page-effect'></div>
+              <div id='page-flavor'></div>
+          </div>
+        </div>
+      
+    </div>
+    <div style="margin-bottom: 40px; text-align: center; font-size: 40px;">Photo Gallery</div>
+    <div class='tier-display'>
+        <div>Tier 1</div>
+        <div class="card-display" id='tier-1'>
+        </div>
+    </div>
+    <div class='tier-display'>
+        <div>Tier 2</div>
+        <div class="card-display" id='tier-2'></div>
+    </div>
+    <div class='tier-display'>
+        <div>Tier 3</div>
+        <div class="card-display" id='tier-3'></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

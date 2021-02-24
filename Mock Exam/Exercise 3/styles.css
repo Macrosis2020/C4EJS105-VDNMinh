@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+}
+.modal {
+    display: none;
+    background-color: black;
+    border: white 5px solid;
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+    height: fit-content;
+    padding: 20px;
+}
+.close-btn {
+    user-select: none;
+    width: fit-content;
+    padding: 3px;
+}
+.close-btn:hover {
+    color: black;
+    background-color: white;
+}
+.tier-display {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    border: 2px black solid;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.card-display {
+    border: 1px white solid;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-display img {
+    border: white 2px solid;
+    width: 30%;
+    height: auto;
+    margin: 2px;
+}
