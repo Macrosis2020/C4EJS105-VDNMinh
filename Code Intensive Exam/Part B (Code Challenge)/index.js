@@ -23,7 +23,8 @@ function registerInput() {
     if (userInput == rightAns) {
         document.getElementById('input-field').value = '';
         document.getElementById('alert-message').textContent = "Congrats! You got the right number!";
-        document.getElementById('user-option').textContent = "Damn, nice";
+        document.getElementById('user-option').textContent = "Try Again";
+        document.getElementById('user-option').addEventListener('click', resetGame());
         openAlertModal();
     } else if (guess>1) {
         guess--;
