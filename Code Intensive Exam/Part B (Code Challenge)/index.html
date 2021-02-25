@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="modal" id="alert-modal">
+        <div id="alert-message" style="margin-bottom: 20px;">Placeholder</div>
+        <div id="user-option" class="btn" style="margin: auto" onclick="closeAlertModal()">Placeholder</div>
+    </div>
+    <div class="main-box">
+        <div style="text-align: center; font-size: 200%; 
+        padding: 5px; border: 2px white dashed; margin-bottom: 10px;">LOTERRY GAME</div>
+        <div style="text-align: center; font-size: 120%; margin: 15px">Guess a number between 1 and 10</div>
+        <div style="text-align:center;">
+            <input type="number" style="margin-bottom: 10px;" placeholder="Insert your guess" id="input-field">
+            <div class="btn" id="input-btn"
+            style="margin:auto" onclick="registerInput()">ENTER</div>
+        </div>
+        <div style="text-align: center; font-size: 120%; margin: 15px" id="guess-field">Remaining guesses: 3</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
